@@ -1,0 +1,40 @@
+version: "3.8"
+
+services: 
+  # Database
+  db:
+    image: mysql:8
+    volumes: 
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    networks:
+      - wpresumesite
+  # Wordpress
+  wordpress: 
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+      restart: always
+      # Web route for Apache, which is used by WP
+      volumes: ["./:/var/www/html"]
+      environment:
+        # host is db service
+        # 3306 is default port for mysql
+        WORDPRESS_DB_HOST: db:3306
+        # must match mysql user and password
+        WORDPRESS_DB_USER: wordpress
+        WORDPRESS_DB_PASSWORD: wordpress
+      networks:
+        - wpresumesite
+networks: 
+  wpresumesite:
+volumes:
+  db_data:
+
