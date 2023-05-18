@@ -11,8 +11,8 @@ const Footer = () => {
                 <li>
                     <NavLink className='nav-link' to="/about">About Me</NavLink>
                 </li>
-                <li>My Work</li>
-                <li>Get in Touch</li>
+                <li className='coming-soon'>My Work</li>
+                <li className='coming-soon'>Get in Touch</li>
             </ul>
         </footer>
     );

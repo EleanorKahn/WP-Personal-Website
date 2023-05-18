@@ -6,6 +6,26 @@ ul {
     list-style: none;
 }
 
+body {
+    background-color: mediumvioletred;
+}
+
+/* Coming soon styles */
+
+/*
+
+.coming-soon span{
+    visibility: hidden;
+    z-index: 1;
+}
+
+.coming-soon:hover,
+.coming-soon:focus {
+    visibility: visible;
+}
+
+*/
+
 .nav-link {
     text-decoration: none;
 }
@@ -44,6 +64,7 @@ Header styles
 
 .header ul li {
     border-bottom: 1px solid rgba(255, 255, 255, .75);
+    padding-bottom: .15rem;
 }
 
 .header ul li:last-child {
