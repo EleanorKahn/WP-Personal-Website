@@ -1,6 +1,9 @@
 /wp-admin
-/wp-content
 /wp-includes
+/wp-content/plugins
+/wp-content/themes/twentytwentyone
+/wp-content/themes/twentytwentythree
+/wp-content/themes/twentytwentytwo
 
 wp-activate.php
 wp-blog-header.php
@@ -17,3 +20,5 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+
+/frontend/node_modules
