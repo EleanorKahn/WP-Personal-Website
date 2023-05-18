@@ -2,18 +2,30 @@
 General styles
 */
 
-.horizontal {
-    display: flex;
+ul {
+    list-style: none;
 }
+
+.nav-link {
+    text-decoration: none;
+}
+
+/* App background styling */
 
 .App {
     background-color: cornflowerblue;
 }
 
-ul {
-    list-style: none;
+/* list items laid out along main axis */
+
+.horizontal {
+    display: flex;
+    
 }
 
+.horizontal li {
+    margin-inline-end: 1.5rem;
+}
 
 /* 
 Header styles
@@ -23,14 +35,38 @@ Header styles
     background-color: rgba(200, 52, 230, .25);
 }
 
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.header ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, .75);
+}
+
+.header ul li:last-child {
+    margin-inline-end: 0rem;
+}
+
 /* 
 Footer styles
 */
 
 .footer {
     background-color: rgba(200, 52, 230, .25);
+    padding-block: .5rem;
 }
 
+.footer .horizontal {
+    justify-content: space-around;
+}
+
+.footer li {
+    border: 1px solid white;
+    padding: .5rem .75rem;
+}
 
 /* 
 LandingPage styles
@@ -47,4 +83,8 @@ AboutPage styles
 .about-page {
     background-color: powderblue;
 }
+
+/* 
+Media queries @ 525
+*/
 

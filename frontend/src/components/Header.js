@@ -10,10 +10,10 @@ const Header = () => {
                 </h1>
                 <ul className='horizontal'>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink className='nav-link' to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About Me</NavLink>
+                        <NavLink className='nav-link' to="/about">About Me</NavLink>
                     </li>
                     <li>My Work</li>
                     <li>Get in Touch</li>
