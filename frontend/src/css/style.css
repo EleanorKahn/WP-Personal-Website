@@ -1,13 +1,29 @@
 /* 
 General styles
+    background-image: linear-gradient(#ebebeb, var(--background-white));
 */
+
+/* */
+:root {
+    --teapot-teal: #82a49d;
+    --coffee-brown: #090201;
+    --coffee-reflection: #776d6c;
+    --daisy-yellow: #a5c31b;
+    --leafy-green: #385e26;
+    --notebook-gray: #a4a4a4;
+    --background-white: #eeeeee;
+}
+
 
 ul {
     list-style: none;
 }
 
 body {
-    background-color: mediumvioletred;
+    background-image: url("../assets//images/desk-2325627_1920.jpg");
+    background-size: cover;
+    padding: 0rem;
+    display: grid;
 }
 
 /* Coming soon styles */
@@ -33,7 +49,7 @@ body {
 /* App background styling */
 
 .App {
-    background-color: cornflowerblue;
+    
 }
 
 /* list items laid out along main axis */
@@ -47,13 +63,13 @@ body {
     margin-inline-end: 1.5rem;
 }
 
+h1 .nav-link {
+    color: var(--daisy-yellow);
+}
+
 /* 
 Header styles
 */
-
-.header {
-    background-color: rgba(200, 52, 230, .25);
-}
 
 .header nav {
     display: flex;
@@ -76,7 +92,6 @@ Footer styles
 */
 
 .footer {
-    background-color: rgba(200, 52, 230, .25);
     padding-block: .5rem;
 }
 
@@ -87,6 +102,22 @@ Footer styles
 .footer li {
     border: 1px solid white;
     padding: .5rem .75rem;
+    background-color: rgba(var(--notebook-gray), 0.5);
+}
+
+.footer li:hover,
+.footer li:focus {
+    border: 1px solid var(--daisy-yellow)
+}
+
+.footer li:active {
+    color: var(--leafy-green)
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* 
@@ -101,11 +132,26 @@ LandingPage styles
 AboutPage styles
 */
 
-.about-page {
-    background-color: powderblue;
+.about-page .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    align-items: center;
+    place-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-page h2 {
+    text-align: center;
+}
+
+.about-page p {
+    color: var(--coffee-brown)
 }
 
 /* 
 Media queries @ 525
 */
+
 
