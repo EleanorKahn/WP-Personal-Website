@@ -2,10 +2,10 @@ import React from 'react';
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className='landing-page'>
             <h2>ELEANOR KAHN</h2>
             <h3>Creativity in Code</h3>
-            <ul>
+            <ul className='horizontal'>
                 <li>React logo</li>
                 <li>JS Logo</li>
                 <li>CSS logo</li>

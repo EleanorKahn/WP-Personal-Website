@@ -1,0 +1,50 @@
+/* 
+General styles
+*/
+
+.horizontal {
+    display: flex;
+}
+
+.App {
+    background-color: cornflowerblue;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 
+Header styles
+*/
+
+.header {
+    background-color: rgba(200, 52, 230, .25);
+}
+
+/* 
+Footer styles
+*/
+
+.footer {
+    background-color: rgba(200, 52, 230, .25);
+}
+
+
+/* 
+LandingPage styles
+*/
+
+.landing-page {
+    background-color: powderblue;
+}
+
+/* 
+AboutPage styles
+*/
+
+.about-page {
+    background-color: powderblue;
+}
+
