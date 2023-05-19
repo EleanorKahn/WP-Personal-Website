@@ -26,6 +26,10 @@ body {
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
+    background-image: url('../assets//images/ink-303240_640.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 /* Coming soon styles */
@@ -156,7 +160,7 @@ LandingPage styles
 }
 
 .landing-page h2 {
-    font-family: "Foldit", "cursive";
+    font-family: 'Foldit', 'cursivel';
     font-weight: 700;
     font-size: xx-large;
     margin-bottom: 1rem;
@@ -165,6 +169,7 @@ LandingPage styles
 .landing-page h3 {
     color: var(--teapot-teal);
     margin-bottom: 0rem;
+    font-family: "Sansita", "sans-serif";
 }
 
 /* 
@@ -189,6 +194,7 @@ AboutPage styles
 
 .about-page h2 {
     text-align: center;
+    font-family: 'Sansita', 'sans-serif';
 }
 
 .about-page p {
