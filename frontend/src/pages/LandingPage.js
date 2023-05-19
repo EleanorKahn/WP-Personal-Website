@@ -4,7 +4,7 @@ const LandingPage = () => {
     return (
         <div className='landing-page'>
             <h2>&lt;ELEANOR KAHN/&gt;</h2>
-            <h3>Junior Software Engineer</h3>
+            <h3>Junior Software Engineer, Cat Lover</h3>
             <ul className='horizontal'>
                 <li><i className="fa-brands fa-react fa-xl"></i></li>
                 <li><i className="fa-brands fa-js fa-xl"></i></li>

@@ -18,6 +18,12 @@ const Footer = () => {
                     <NavLink className="nav-link" to="/contact">Get in Touch</NavLink>
                 </li>
             </ul>
+            <ul className='social'>
+                <li><i className='fa fa-twitter fa-xl' /></li>
+                <li><i className='fa fa-instagram fa-xl' /></li>
+                <li><i className='fa fa-linkedin fa-xl'/></li>
+                <li><i className='fa fa-github fa-xl'/></li>
+            </ul>
         </footer>
     );
 };

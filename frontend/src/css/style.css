@@ -21,14 +21,14 @@ ul {
 
 body {
     /* background-image: url("../assets//images/desk-2325627_1920.jpg");
-    background-size: cover;  */
+    background-size: cover;   */
     padding: 0rem;
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
-    background-image: url('../assets//images/ink-303240_640.png');
+    /* background-image: url('../assets//images/ink-303240_640.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     
 }
 
@@ -99,14 +99,14 @@ Header styles
 }
 
 .header ul li {
-    border-bottom: 1px solid var(--teapot-teal);
+    border-bottom: 1.5px solid var(--teapot-teal);
     padding-bottom: .15rem;
     padding-top: .15rem;
 }
 
 .header ul li:hover {
-    border-bottom: 1px solid var(--daisy-yellow);
-    border-top: 1px solid var(--daisy-yellow);
+    border-bottom: 1.5px solid var(--daisy-yellow);
+    border-top: 1.5px solid var(--daisy-yellow);
     padding-bottom: .15rem;
 }
 
@@ -119,7 +119,7 @@ Footer styles
 */
 
 .footer {
-    padding-block: .5rem;
+    padding-block-start: .5rem;
 }
 
 .footer .horizontal {
@@ -127,14 +127,23 @@ Footer styles
 }
 
 .footer li {
-    border: 1px solid var(--teapot-teal);
+    border: 1.5px solid var(--teapot-teal);
     padding: .5rem .75rem;
     background-color: rgba(var(--notebook-gray), 0.5);
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social li {
+    border: none;
+}
+
 .footer li:hover,
 .footer li:focus {
-    border: 1px solid var(--daisy-yellow)
+    border: 1.5px solid var(--daisy-yellow)
 }
 
 .footer li:active {
@@ -156,13 +165,12 @@ LandingPage styles
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .landing-page h2 {
     font-family: 'Foldit', 'cursivel';
     font-weight: 700;
-    font-size: xx-large;
+    font-size: 100px;
     margin-bottom: 1rem;
 }
 
@@ -177,8 +185,7 @@ AboutPage styles
 */
 
 .about-page {
-    min-height: 100vh;
-    margin: 0 auto;
+
 }
 
 .about-page .grid {
@@ -195,6 +202,7 @@ AboutPage styles
 .about-page h2 {
     text-align: center;
     font-family: 'Sansita', 'sans-serif';
+    background-image: url("../assets//images/white-2484120_640.png");
 }
 
 .about-page p {
