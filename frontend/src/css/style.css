@@ -5,7 +5,7 @@ General styles
 
 /* */
 :root {
-    --teapot-teal: #77a99f;
+    --teapot-teal: #5eaaa7;
     --coffee-brown: #090201;
     --coffee-reflection: #776d6c;
     --daisy-yellow: #9ac112;
@@ -26,10 +26,28 @@ body {
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
+    background-color: var(--background-white);
+
     /* background-image: url('../assets//images/ink-303240_640.png');
     background-repeat: no-repeat;
     background-position: center; */
     
+}
+
+.header {
+    border-bottom: 2px var(--leafy-green) solid;
+}
+
+.footer {
+    border-top: 2px var(--leafy-green) solid;
+}
+
+.landing-page {
+    border: 2px var(--leafy-green) solid;
+}
+
+.about-page {
+    border: 2px var(--leafy-green) solid;
 }
 
 /* Coming soon styles */
@@ -71,7 +89,7 @@ body {
 }
 
 .horizontal li {
-    margin-inline-end: 1.5rem;
+    margin-inline-end: 2rem;
 }
 
 /* 
@@ -90,7 +108,6 @@ Header styles
 
 .nav-link h1 {
     font-size: x-large;
-    font-family: 'Foldit', 'cursive';
     font-weight: bold;
 }
 
@@ -132,15 +149,6 @@ Footer styles
     background-color: rgba(var(--notebook-gray), 0.5);
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-}
-
-.social li {
-    border: none;
-}
-
 .footer li:hover,
 .footer li:focus {
     border: 1.5px solid var(--daisy-yellow)
@@ -149,6 +157,24 @@ Footer styles
 .footer li:active {
     color: var(--leafy-green)
 }
+
+#social-holder {
+    border: none;
+    padding-left: 0rem;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#social li {
+    border: none;
+    margin-right: 5px;
+    padding: .25rem;
+}
+
 
 .footer {
     position: absolute;
@@ -168,16 +194,19 @@ LandingPage styles
 }
 
 .landing-page h2 {
-    font-family: 'Foldit', 'cursivel';
     font-weight: 700;
-    font-size: 100px;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
 .landing-page h3 {
     color: var(--teapot-teal);
     margin-bottom: 0rem;
-    font-family: "Sansita", "sans-serif";
+}
+
+.landing-page li {
+    margin-right: 1rem;
+    padding: 0px
 }
 
 /* 
@@ -185,7 +214,7 @@ AboutPage styles
 */
 
 .about-page {
-
+    background-color: white;
 }
 
 .about-page .grid {
@@ -195,19 +224,26 @@ AboutPage styles
     align-items: center;
     place-content: center;
     margin: 0 auto;
-    width: 75%;
     box-shadow: 0 25px 25px rgba(37, 37, 37, 0.1);
+    
 }
 
 .about-page h2 {
     text-align: center;
-    font-family: 'Sansita', 'sans-serif';
-    background-image: url("../assets//images/white-2484120_640.png");
+    margin-right: 2rem;
 }
 
 .about-page p {
     color: var(--coffee-brown);
     line-height: 1.75;
+}
+
+.about-page p::first-line {
+    font-size: large;
+}
+
+.about-page p::first-letter {
+    font-size: 2rem;
 }
 
 /* 
