@@ -26,7 +26,6 @@ body {
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
-    background-image: linear-gradient(rgb(248, 242, 233), white);
 }
 
 /* Coming soon styles */
@@ -174,7 +173,7 @@ AboutPage styles
 
 .about-page .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     padding: 2rem;
     align-items: center;
     place-content: center;
