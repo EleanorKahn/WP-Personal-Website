@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import SocialIconList from './SocialIconList';
 
 const Footer = () => {
     return (
@@ -17,15 +18,10 @@ const Footer = () => {
                 <li className='coming-soon'>
                     <NavLink className="nav-link" to="/contact">Get in Touch</NavLink>
                 </li>
-                <li id='social-holder'>
-                    <ul id='social'>
-                        <li><i className='fa fa-twitter fa-xl' /></li>
-                        <li><i className='fa fa-instagram fa-xl' /></li>
-                        <li><i className='fa fa-linkedin fa-xl'/></li>
-                        <li><i className='fa fa-github fa-xl'/></li>
-                    </ul>
-                </li>
             </ul>
+            <div id='social-holder'>
+                <SocialIconList />
+            </div>
             
         </footer>
     );

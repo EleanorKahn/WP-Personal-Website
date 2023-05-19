@@ -14,6 +14,10 @@ General styles
     --background-white: #eeeeee;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 ul {
     list-style: none;
@@ -26,12 +30,11 @@ body {
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
-    background-color: var(--background-white);
+    background-color: var(white);
 
     /* background-image: url('../assets//images/ink-303240_640.png');
     background-repeat: no-repeat;
     background-position: center; */
-    
 }
 
 .header {
@@ -40,14 +43,15 @@ body {
 
 .footer {
     border-top: 2px var(--leafy-green) solid;
+    border-bottom: 2px var(--leafy-green) solid;
 }
 
 .landing-page {
     border: 2px var(--leafy-green) solid;
 }
 
-.about-page {
-    border: 2px var(--leafy-green) solid;
+i {
+    color: var(--coffee-brown);
 }
 
 /* Coming soon styles */
@@ -106,9 +110,8 @@ Header styles
     padding-inline: 2rem;
 }
 
-.nav-link h1 {
-    font-size: x-large;
-    font-weight: bold;
+h1 {
+    font-size: 2rem;
 }
 
 .nav-link span {
@@ -224,8 +227,12 @@ AboutPage styles
     align-items: center;
     place-content: center;
     margin: 0 auto;
+    max-width: 75%;
     box-shadow: 0 25px 25px rgba(37, 37, 37, 0.1);
-    
+}
+
+.grid > *:nth-child(even) {
+    border-left: 1px solid var(--notebook-gray);
 }
 
 .about-page h2 {
@@ -236,6 +243,7 @@ AboutPage styles
 .about-page p {
     color: var(--coffee-brown);
     line-height: 1.75;
+    padding-inline: 4rem;
 }
 
 .about-page p::first-line {
