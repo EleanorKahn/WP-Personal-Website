@@ -86,7 +86,8 @@ Header styles
 
 .nav-link h1 {
     font-size: x-large;
-
+    font-family: 'Foldit', 'cursive';
+    font-weight: bold;
 }
 
 .nav-link span {
@@ -155,6 +156,8 @@ LandingPage styles
 }
 
 .landing-page h2 {
+    font-family: "Foldit", "cursive";
+    font-weight: 700;
     font-size: xx-large;
     margin-bottom: 1rem;
 }
