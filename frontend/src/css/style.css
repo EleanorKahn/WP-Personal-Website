@@ -46,6 +46,7 @@ body {
 
 .nav-link {
     text-decoration: none;
+    color: var(--coffee-brown);
 }
 
 .nav-link:visited {

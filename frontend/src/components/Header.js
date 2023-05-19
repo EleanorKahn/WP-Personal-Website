@@ -15,8 +15,12 @@ const Header = () => {
                     <li>
                         <NavLink className='nav-link' to="/about">About Me</NavLink>
                     </li>
-                    <li className='coming-soon'>My Work</li>
-                    <li className='coming-soon'>Get in Touch</li>
+                    <li className='coming-soon'>
+                        <NavLink className="nav-link" to="/mywork">My Work</NavLink>
+                    </li>
+                    <li className='coming-soon'>
+                        <NavLink className="nav-link" to="/contact">Get in Touch</NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
