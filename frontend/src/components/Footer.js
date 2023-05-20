@@ -22,7 +22,6 @@ const Footer = () => {
             <div id='social-holder'>
                 <SocialIconList />
             </div>
-            
         </footer>
     );
 };
