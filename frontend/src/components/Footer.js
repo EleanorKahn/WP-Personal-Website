@@ -5,7 +5,7 @@ import SocialIconList from './SocialIconList';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <ul className='horizontal'>
+            <ul className='horizontal footer-navigation'>
                 <li>
                     <NavLink className='nav-link' to="/">Home</NavLink>
                 </li>

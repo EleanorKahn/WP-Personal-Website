@@ -11,4 +11,4 @@ const SocialIconList = () => {
     );
 };
 
-export default SocialIconList
+export default SocialIconList;
