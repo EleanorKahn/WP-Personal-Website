@@ -250,7 +250,15 @@ Media queries @ 525
 }
 
 @media screen and (max-width: 659px) {
-
+    .header .drop-down  {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header .drop-down .nav-link {
+        flex: 1;
+        min-width: 100%;
+    }
 }
     
 

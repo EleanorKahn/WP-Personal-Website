@@ -8,7 +8,7 @@ const Header = () => {
                 <h1>
                     <NavLink className='nav-link' to="/">&lt;<span className=''>EK</span>/&gt;</NavLink>
                 </h1>
-                <ul className='horizontal'>
+                <ul className='horizontal drop-down'>
                     <li>
                         <NavLink className='nav-link' to="/">Home</NavLink>
                     </li>
