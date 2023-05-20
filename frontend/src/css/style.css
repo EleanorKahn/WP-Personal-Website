@@ -1,9 +1,6 @@
 /* 
 General styles
-    background-image: linear-gradient(#ebebeb, var(--background-white));
 */
-
-/* */
 :root {
     --teapot-teal: #5eaaa7;
     --coffee-brown: #090201;
@@ -31,20 +28,6 @@ body {
     min-height: 100vh;
     background-color: var(white);
     font-family: 'DM Sans', 'sans-serif';
-
-    /* background-image: url('../assets//images/ink-303240_640.png');
-    background-repeat: no-repeat;
-    background-position: center; */
-}
-
-.header {
-    border-bottom: 1px var(--leafy-green) solid;
-    background-color: white;
-}
-
-.footer {
-    border-top: 1px var(--leafy-green) solid;
-    background-color: white;
 }
 
 i {
@@ -55,22 +38,9 @@ h1, h2, h3 {
     font-family: "Oswald", "sans-serif";
 }
 
-/* Coming soon styles */
-
-/*
-
-.coming-soon span{
-    visibility: hidden;
-    z-index: 1;
-}
-
-.coming-soon:hover,
-.coming-soon:focus {
-    visibility: visible;
-}
-
+/* 
+Sitewide nav-link styling
 */
-
 .nav-link {
     text-decoration: none;
     color: var(--coffee-brown);
@@ -84,10 +54,7 @@ h1, h2, h3 {
     color: var(--daisy-yellow)
 }
 
-/* App background styling */
-
 /* list items laid out along main axis */
-
 .horizontal {
     display: flex;
     
@@ -100,9 +67,15 @@ h1, h2, h3 {
 /* 
 Header styles
 */
+.header {
+    border-bottom: 1px var(--leafy-green) solid;
+    background-color: white;
+    
+}
 
 .header nav {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding-inline: 3rem;
@@ -135,13 +108,15 @@ h1 {
 /* 
 Footer styles
 */
-
 .footer {
     padding-block-start: .5rem;
+    border-top: 1px var(--leafy-green) solid;
+    background-color: white;
 }
 
 .footer .horizontal {
     justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 .footer li {
@@ -179,13 +154,12 @@ Footer styles
 /* 
 LandingPage styles
 */
-
 .landing-page {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 75vh;
     background-image: url("../assets//images/desk-2325627_1280.jpg");
     background-size: cover;    
 }
@@ -217,11 +191,10 @@ LandingPage styles
 /* 
 AboutPage styles
 */
-
 .about-page {
     /* background-color: white; */
-    min-height: 100vh;
-    background-image: url("../assets//images/desk-2325627_1280.jpg");
+    /* min-height: 75vh; */
+    background-image: url("../assets/images/desk-2325627_1920.jpg");
     background-size: cover; 
     display: grid;
     place-content: center;
@@ -229,12 +202,14 @@ AboutPage styles
 
 .about-page .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 50%;
     padding: 2rem;
     align-items: center;
     place-content: center;
     margin: 0 auto;
-    max-width: 75%;
+    /* max-width: 75%; */
     background-color: rgba(255, 255, 255, .75);
     box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
 }
@@ -267,5 +242,17 @@ AboutPage styles
 /* 
 Media queries @ 525
 */
+
+@media screen and (max-width: 1036px) { 
+    .about-page .grid {
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (max-width: 659px) {
+
+}
+    
+
 
 
