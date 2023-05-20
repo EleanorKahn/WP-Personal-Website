@@ -5,8 +5,7 @@ const AboutPage = () => {
         <div className='about-page'>
             <div className='grid'>
                 <section>
-                    <h2>Hi!</h2>
-                    <p>I'm Eleanor</p>
+                    <h2>Hi, I'm Eleanor</h2>
                 </section>
                 <section>
                     <article className='summary'>

@@ -24,8 +24,6 @@ ul {
 }
 
 body {
-    /* background-image: url("../assets//images/desk-2325627_1920.jpg");
-    background-size: cover;    */
     padding-inline: 1rem;
     margin: 0rem;
     display: grid;
@@ -41,10 +39,12 @@ body {
 
 .header {
     border-bottom: 1px var(--leafy-green) solid;
+    background-color: white;
 }
 
 .footer {
     border-top: 1px var(--leafy-green) solid;
+    background-color: white;
 }
 
 i {
@@ -96,15 +96,16 @@ i {
 /* 
 Header styles
 */
-.header {
-    margin-bottom: 1rem;
-}
 
 .header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 2rem;
+}
+
+.header i {
+    margin-right: .5rem;
 }
 
 h1 {
@@ -119,14 +120,13 @@ h1 {
 
 .header ul li {
     border-bottom: 1.75px solid var(--teapot-teal);
-    padding-bottom: .2rem;
-    padding-top: .2rem;
+    padding: .2rem;
 }
 
 .header ul li:hover {
     border-bottom: 1.75px solid var(--daisy-yellow);
-    border-top: 1.75px solid var(--daisy-yellow);
-    padding-bottom: .15rem;
+    border-right: 1.75px solid var(--daisy-yellow);
+    padding-right: .15rem;
 }
 
 .header ul li:last-child {
@@ -187,29 +187,33 @@ LandingPage styles
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    background-image: url("../assets//images/desk-2325627_1280.jpg");
+    background-size: cover;    
 }
 
 .landing-page h2 {
     font-weight: 700;
     font-size: 6rem;
+    color: var(--leafy-green);
     font-family: 'Oswald', 'sans-serif';
     letter-spacing: .25rem;
-    margin-bottom: 0rem;
-    padding-bottom: 0rem;
+    margin-bottom: 1rem;
+    text-shadow: #090201;
 }
 
 .landing-page h3 {
-    color: var(--teapot-teal);
     margin-top: 0rem;
-    margin-bottom: 0rem;
     font-family: 'DM Serif Display', 'serif';
     letter-spacing: .25rem;
     font-size: 2rem;
 }
 
+.landing-page ul {
+    margin-top: 0rem;
+}
+
 .landing-page li {
     margin-right: 1rem;
-    padding: 0px
 }
 
 /* 
@@ -219,6 +223,10 @@ AboutPage styles
 .about-page {
     /* background-color: white; */
     min-height: 100vh;
+    background-image: url("../assets//images/desk-2325627_1280.jpg");
+    background-size: cover; 
+    display: grid;
+    place-content: center;
 }
 
 .about-page .grid {
@@ -229,8 +237,8 @@ AboutPage styles
     place-content: center;
     margin: 0 auto;
     max-width: 75%;
-    background-color: white;
-    box-shadow: 0 25px 25px rgba(37, 37, 37, 0.1);
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
 }
 
 .grid > *:nth-child(even) {
@@ -245,18 +253,17 @@ AboutPage styles
     font-family: "DM Serif Display", 'serif';
 }
 
-.about-page p {
+.about-page .summary p {
     color: var(--coffee-brown);
     line-height: 1.75;
     padding-inline: 4rem;
 }
 
-.about-page p::first-line {
+.about-page .summary > p::first-line {
     font-size: large;
-    font-family: "DM Serif Display", "serif";
 }
 
-.about-page p::first-letter {
+.about-page .summary > p::first-letter {
     font-size: 2rem;
 }
 
