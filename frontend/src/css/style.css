@@ -15,6 +15,13 @@ General styles
     padding-bottom: 0rem;
 }
 
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -28,6 +35,7 @@ ul {
 body {
     padding-inline: 1rem;
     margin: 0rem;
+    flex-grow: 1;
     display: grid;
     color: var(--coffee-brown);
     min-height: 100vh;
@@ -70,7 +78,7 @@ Header styles
 .header {
     border-bottom: 1px var(--leafy-green) solid;
     background-color: white;
-    
+    height: fit-content;
 }
 
 .header nav {
@@ -119,6 +127,7 @@ Footer styles
     padding-top: .5rem;
     border-top: 1px var(--leafy-green) solid;
     background-color: white;
+    height: fit-content;
 }
 
 .footer .horizontal {
@@ -163,10 +172,10 @@ LandingPage styles
 */
 .landing-page {
     display: flex;
+    flex-grow: 1;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    min-height: 73vh; 
     background-image: url("../assets//images/desk-2325627_1920.jpg");
     background-size: cover;    
 }
@@ -205,6 +214,7 @@ AboutPage styles
     background-size: cover; 
     display: grid;
     place-content: center;
+    flex-grow: 1;
 }
 
 .about-page .grid {
