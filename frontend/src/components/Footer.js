@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className='footer'>
             <ul className='horizontal footer-navigation'>
                 <li>
-                    <NavLink className='nav-link' to="/">Home</NavLink>
+                    <NavLink className='nav-link footer-nav-link' to="/">Home</NavLink>
                 </li>
                 <li>
                     <NavLink className='nav-link' to="/about">About Me</NavLink>
