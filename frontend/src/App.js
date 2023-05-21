@@ -9,22 +9,22 @@ import "./css/style.css";
 import { useEffect } from 'react';
 
 function App() {
-  const tokenUrl = "http://localhost:8000/wp-json/jwt-auth/v1/token";
-  let token = "";
-  //let base64 = require('base-64');
-  let headers = new Headers();
-  headers.append('Authorization', 'Basic ' + process.env.MY_USERNAME + ":" + process.env.MY_PASSWORD)
+  // const tokenUrl = "http://localhost:8000/wp-json/jwt-auth/v1/token";
+  // let token = "";
+  // //let base64 = require('base-64');
+  // let headers = new Headers();
+  // headers.append('Authorization', 'Basic ' + process.env.MY_USERNAME + ":" + process.env.MY_PASSWORD)
 
-  useEffect(() => {
-    fetch(tokenUrl)
-    .then((res) => res.json)
-    .then((data) => {
-      return (token = data);
-    })
-    .catch((err) => console.log(err))
-  }, []);
+  // useEffect(() => {
+  //   fetch(tokenUrl)
+  //   .then((res) => res.json)
+  //   .then((data) => {
+  //     return (token = data);
+  //   })
+  //   .catch((err) => console.log(err))
+  // }, []);
 
-  console.log(token);
+  // console.log(token);
 
   return (
     <div className="App">
