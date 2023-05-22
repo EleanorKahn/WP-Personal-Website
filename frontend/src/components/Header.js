@@ -1,34 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-//import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler, NavItem,  } from "reactstrap";
+import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler, NavItem,  } from "reactstrap";
 
 const Header = () => {
-    
-    // const [collapsed, setCollapsed] = useState(false);
-
-    // const toggleNavbar = () => setCollapsed(!collapsed);
+    const [menuOpen, setmenuOpen] = useState(true);
+    const toggleNavbar = () => setmenuOpen(!menuOpen);
 
     return (
         <div className="header">
-            <nav>
-                <h1 className='header-icon'>
-                    <NavLink className='nav-link' to="/">&lt;<span className=''>EK</span>/&gt;</NavLink>
-                </h1>
-                <ul className='horizontal navigation-menu'>
-                    <li>
+            <Navbar className="nav" id="nav" expand="sm" style={{}}>
+                <NavbarBrand href="/">
+                    <h1 className='header-icon'>
+                        <NavLink className='nav-link' to="/">&lt;<span className=''>EK</span>/&gt;</NavLink>
+                    </h1>
+                </NavbarBrand>
+                <NavbarToggler onClick={() => toggleNavbar()}/>
+                <Collapse isOpen={!menuOpen} navbar>
+                    <Nav className="horizontal navigation-menu" navbar>
                         <NavLink className='nav-link' to="/">Home</NavLink>
-                    </li>
-                    <li>
                         <NavLink className='nav-link' to="/about">About Me</NavLink>
-                    </li>
-                    <li>
                         <NavLink className="nav-link" to="/">My Work</NavLink>
-                    </li>
-                    <li>
                         <NavLink className="nav-link" to="/">Get in Touch</NavLink>
-                    </li>
-                </ul>
-            </nav>
+                    </Nav>
+                </Collapse>
+            </Navbar>
         </div>
     );
 };

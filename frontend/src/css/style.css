@@ -32,6 +32,10 @@ ul {
     padding-left: 0px;
 }
 
+.navigation-menu {
+    padding-left: 0px;
+}
+
 body {
     padding-inline: 1rem;
     margin: 0rem;
@@ -81,16 +85,16 @@ Header styles
     height: fit-content;
 }
 
-.header nav {
+.header #nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center; 
-    padding-inline: 3rem;
 }
 
 .header .header-icon {
     font-size: 2rem;
+    font-weight: 600;
     font-family: "Oswald", 'sans-serif';
     letter-spacing: .15rem;
     text-shadow: .5px .5px 1px var(--coffee-brown);
@@ -101,22 +105,22 @@ Header styles
     color: var(--daisy-yellow);
 }
 
-.header ul {
+.header .navigation-menu {
     padding-inline: .5rem;
 }
 
-.header ul li {
+.header .navigation-menu .nav-link {
     border-bottom: 1.75px solid var(--teapot-teal);
     padding: .3rem;
     margin-right: 2rem;
 }
 
-.header ul li:hover {
+.header .navigation-menu .nav-link:hover {
     border-bottom: 1.75px solid var(--daisy-yellow);
     border-right: 1.75px solid var(--daisy-yellow);
 }
 
-.header ul li:last-child {
+.header .navigation-menu .nav-link:last-child {
     margin-inline-end: 0rem;
 }
 
@@ -299,14 +303,6 @@ Media Queries for landing page text
 }
 
 @media screen and (max-width: 659px) {
-    .header .navigation-menu  {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header .navigation-menu li {
-        
-    }
 
     .footer .footer-navigation {
         justify-content: center;

@@ -22,3 +22,5 @@ wp-trackback.php
 xmlrpc.php
 
 /frontend/node_modules
+
+auth.env
