@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler, NavItem,  } from "reactstrap";
+import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler } from "reactstrap";
 
 const Header = () => {
     const [menuOpen, setmenuOpen] = useState(true);

@@ -128,7 +128,7 @@ Header styles
 Footer styles
 */
 .footer {
-    padding-top: .5rem;
+    padding-top: 1rem;
     border-top: 1px var(--leafy-green) solid;
     background-color: white;
     height: fit-content;
@@ -168,7 +168,7 @@ Footer styles
 #social li {
     border: none;
     margin-right: 5px;
-    padding: .25rem;
+    padding-inline: .25rem;
 }
 
 /* 
