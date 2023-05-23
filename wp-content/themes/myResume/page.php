@@ -1,0 +1,1 @@
+<!-- for static pages like abouts -->
