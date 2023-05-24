@@ -85,12 +85,12 @@ Header styles
     height: fit-content;
 }
 
-/* .header #nav {
+.header #nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center; 
-} */
+} 
 
 .header .header-icon {
     font-size: 2rem;
@@ -103,11 +103,11 @@ Header styles
 
 .header-icon span {
     color: var(--daisy-yellow);
-}
-
+} 
+/* 
 .header .navigation-menu {
     padding-inline: .5rem;
-}
+} */
 
 .header .navigation-menu .nav-link {
     border-bottom: 1.75px solid var(--teapot-teal);
@@ -122,7 +122,7 @@ Header styles
 
 .header .navigation-menu .nav-link:last-child {
     margin-inline-end: 0rem;
-}
+} */
 
 /* 
 Footer styles
