@@ -104,10 +104,10 @@ Header styles
 .header-icon span {
     color: var(--daisy-yellow);
 } 
-/* 
+
 .header .navigation-menu {
     padding-inline: .5rem;
-} */
+} 
 
 .header .navigation-menu .nav-link {
     border-bottom: 1.75px solid var(--teapot-teal);

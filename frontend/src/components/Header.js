@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler, Container, Row, Col } from "reactstrap";
+import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler } from "reactstrap";
 
 const Header = () => {
     const [menuOpen, setmenuOpen] = useState(true);
@@ -19,18 +19,13 @@ const Header = () => {
                     <NavbarToggler onClick={() => toggleNavbar()}/>
                     <Collapse isOpen={!menuOpen} navbar>
                         <Nav className="horizontal navigation-menu" navbar>
-                            <Col className='md-2' md="4">
                             <NavLink className='nav-link' to="/">Home</NavLink>
-                            </Col>
-                            <Col className='md-2' md="4">
+
                             <NavLink className='nav-link' to="/about">About Me</NavLink>
-                            </Col>
-                            <Col className='md-2' md="4">
+
                             <NavLink className="nav-link" to="/">My Work</NavLink>
-                            </Col>
-                            <Col className='md-2' md="4">
+
                             <NavLink className="nav-link" to="/">Get in Touch</NavLink>
-                            </Col>
                         </Nav>
                     </Collapse>
                 </Navbar>
