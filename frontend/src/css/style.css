@@ -85,12 +85,12 @@ Header styles
     height: fit-content;
 }
 
-.header #nav {
+/* .header #nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center; 
-}
+} */
 
 .header .header-icon {
     font-size: 2rem;
