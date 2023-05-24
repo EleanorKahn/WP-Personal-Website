@@ -163,6 +163,7 @@ Footer styles
     display: flex;
     justify-content: center;
     border: none;
+    margin-bottom: 0rem;
 }
 
 #social li {
@@ -219,16 +220,16 @@ AboutPage styles
     display: grid;
     place-content: center;
     flex-grow: 1;
+    padding: 4rem;
 }
 
 .about-page .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     padding: 2rem;
     align-items: center;
-    place-content: center;
+    place-content: center; 
     margin: 0 auto;
-    max-width: 75%; 
     background-color: rgba(255, 255, 255, .75);
     box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
 }
