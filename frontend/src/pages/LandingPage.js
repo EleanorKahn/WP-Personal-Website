@@ -23,6 +23,7 @@ const LandingPage = () => {
             return data;
         } catch(err) {
             console.log(`${err}`);
+            setIsLoading(false);
             setError(`There has been an error in the call to fetch`);
         } finally {
             console.log('this is the finally block');
