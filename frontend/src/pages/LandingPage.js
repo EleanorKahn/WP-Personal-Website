@@ -1,6 +1,31 @@
-import React from 'react'; 
+import React, { useState, useEffect } from 'react'; 
+import Loading from '../components/Loading';
 
 const LandingPage = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const [heading, setHeading] = useState('');
+    const [subheading, setSubheading] = useState('');
+    const [error, setError] = useState(null);
+
+    useEffect(() =>{
+        requestLanding();
+    },[]);
+
+    async function requestLanding() {
+        try {
+            setIsLoading(true);
+            const response = await fetch('http://localhost:8000/wp-json/wp/v2/test-landing');
+            const data = await response.json();
+            console.log(data[0]);
+            return data;
+        } catch(err) {
+            console.log(`${err}`);
+            setError(`There has been an error in the call to fetch`);
+        } finally {
+            console.log('this is the finally block');
+        }
+    }
+
     return (
         <div className='landing-page'>
             <h2>&lt;ELEANOR KAHN/&gt;</h2>

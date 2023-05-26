@@ -24,9 +24,9 @@ const AboutPage = () => {
             console.log(data);
             console.log(data[0]);
             return data;
-        } catch(error) {
-            console.log(`there has been an error! ${error}`);
-            setError("An error occured while fetching this data");
+        } catch(err) {
+            console.log(`there has been an error! ${err}`);
+            setError(`An error occured while fetching this data`);
         } finally {
             console.log("I am in the finally block");
         }
