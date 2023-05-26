@@ -12,13 +12,12 @@ const AboutPage = () => {
         try {
             const response = await fetch("http://localhost:8000/wp-json/wp/v2/aboutme");
             const data = await response.json();
-            const thisData = data[0];
-            const title = thisData.title;
-            const content = thisData.content;
-            setAboutTitle(data.title);
-            setAboutContent(data.content);
+            const title = data[0].title.rendered;
+            const content = data[0].content.rendered;
+            setAboutTitle(title);
+            setAboutContent(content);
             console.log(data);
-            console.log(thisData);
+            console.log(data[0]);
             return data;
         } catch(error) {
             console.log(`there has been an error! ${error}`);
