@@ -20,7 +20,7 @@ const AboutPage = () => {
             const content = data[0].content.rendered;
             setAboutTitle(title);
             setAboutContent(content);
-            setIsLoading(false);
+            //setIsLoading(false);
             console.log(data);
             console.log(data[0]);
             return data;
