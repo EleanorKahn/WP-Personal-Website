@@ -214,12 +214,11 @@ LandingPage styles
 AboutPage styles
 */
 .about-page {
-    min-height: 75vh; 
     background-image: url("../assets/images/desk-2325627_1280.jpg");
     background-size: cover; 
     display: grid;
     place-content: center;
-    flex-grow: 2;
+    flex-grow: 1;
     padding: 4rem;
     height: fit-content;
     /* overflow: scroll; */
@@ -234,7 +233,8 @@ AboutPage styles
     margin: 0 auto;
     background-color: rgba(255, 255, 255, .75);
     box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
-    height: fit-content;
+    height: 100%;
+    width: 100%;
 }
 
 .grid > *:nth-child(even) {
