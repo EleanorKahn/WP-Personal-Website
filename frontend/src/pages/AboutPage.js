@@ -27,9 +27,9 @@ const AboutPage = () => {
     return (
         <div className='about-page'>
             <section className='grid'>
-                <h2>{aboutTitle}</h2>
+                <h2 dangerouslySetInnerHTML={{__html: aboutTitle}}></h2>
                 <article className='summary'>
-                    <p>{aboutContent}</p>
+                    <p dangerouslySetInnerHTML={{__html: aboutContent}}></p>
                 </article>
             </section>
         </div>
