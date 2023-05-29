@@ -1,4 +1,7 @@
 <?php
+/* 
+Template Name: LandingPage
+*/
 
 get_header(); ?>
 

@@ -5,7 +5,6 @@ import AboutPage from './pages/AboutPage';
 import LandingPage from "./pages/LandingPage";
 import MyWorkPage from "./pages/MyWorkPage";
 import ContactPage from "./pages/ContactPage";
-import "./css/style.css";
 
 function App() {
 
