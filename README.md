@@ -9,13 +9,19 @@
 - connect a frontend built using a JavaScript framework to a Wordpress site using the WP REST API
 
 ## What I used 
-- Wordpress CMS
+- Wordpress CMS version 6.2.2
 - MySQL
 - phpmyadmin
-- React.js with create-react-app
+- React.js version ^18.2.0 with create-react-app
+- ReactDOM version ^18.2.0
+- React-router-dom version ^6.11.1
 - Docker
 - CSS
+- Bootstrap version 5.2.3
+- Reactstrap version ^9.1.10
+- Web vitals version ^2.1.4
 - SASS 
+- NPM package manager 
 
 ### Troubleshooting Wordpress
 
