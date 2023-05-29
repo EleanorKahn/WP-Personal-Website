@@ -21,7 +21,7 @@ function enqueue_react_scripts() {
 
     wp_enqueue_style(
         'react-app-css',
-        get_template_directory_uri() . '../../../frontend/build/style-index.css',
+        get_template_directory_uri() . './style.css',
         array(),
         '1.0'
     );
