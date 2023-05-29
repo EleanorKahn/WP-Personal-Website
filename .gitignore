@@ -4,6 +4,7 @@
 /wp-content/themes/twentytwentyone
 /wp-content/themes/twentytwentythree
 /wp-content/themes/twentytwentytwo
+/wp-content/themes/myResume/assets/build
 
 wp-activate.php
 wp-blog-header.php
@@ -24,3 +25,4 @@ xmlrpc.php
 /frontend/node_modules
 
 auth.env
+
