@@ -26,5 +26,6 @@ xmlrpc.php
 /node_modules
 
 auth.env
+.env
 
 

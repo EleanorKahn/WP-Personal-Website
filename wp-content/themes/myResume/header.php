@@ -6,4 +6,4 @@
     <?php wp_header(); ?>
   </head>
   <body <?php body_class(); ?>>
-    Your header content here.
+    <div id="header"></div>

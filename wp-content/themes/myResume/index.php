@@ -3,7 +3,7 @@
 get_header(); ?>
 
 <!-- example react component -->
-<div id="render-react-example-here"></div>
+<div id="landing-page"></div>
 <!-- end example react component -->
 
 <?php if (have_posts()) {

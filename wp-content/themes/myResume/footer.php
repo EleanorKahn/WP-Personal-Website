@@ -1,4 +1,4 @@
-Your footer content here.
+<div id="footer"></div>
 
 <?php wp_footer(); ?>
 </body>
