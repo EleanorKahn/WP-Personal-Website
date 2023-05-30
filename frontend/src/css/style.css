@@ -79,6 +79,13 @@ Sitewide nav-link styling
 /* 
 Header styles
 */
+
+header {
+    border-bottom: 1px var(--leafy-green) solid;
+    background-color: white;
+    height: fit-content;
+}
+
 .header {
     border-bottom: 1px var(--leafy-green) solid;
     background-color: white;
