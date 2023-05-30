@@ -8,10 +8,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: process.env.MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: process.env.MYSQL_DATABASE
+      MYSQL_USER: process.env.MYSQL_USER
+      MYSQL_PASSWORD: process.env.MYSQL_PASSWORD
     networks:
       - wpresumesite
   # phpmyadmin
@@ -24,7 +24,7 @@ services:
       - '8080:80'
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: process.env.MYSQL_ROOT_PASSWORD
     networks:
       - wpresumesite
   # Wordpress
@@ -42,8 +42,8 @@ services:
       # 3306 is default port for mysql
       WORDPRESS_DB_HOST: db:3306
       # must match mysql user and password
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_USER: process.env.WORDPRESS_DB_USER
+      WORDPRESS_DB_PASSWORD: process.env.WORDPRESS_DB_PASSWORD
     networks:
       - wpresumesite
 networks:

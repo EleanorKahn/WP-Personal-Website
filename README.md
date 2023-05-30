@@ -22,9 +22,12 @@
 - Web vitals version ^2.1.4
 - SASS 
 - NPM package manager 
+- dotenv
 
 ## Project Setup
+
 #### Setting up Docker
+After downloading docker and putting together the docker-compose.yaml file (or cloning this one), run "docker compose up -d" to build the container associated with this project. 
 
 
 ### Troubleshooting Wordpress
