@@ -129,11 +129,19 @@ header {
 
 .header .navigation-menu .nav-link:last-child {
     margin-inline-end: 0rem;
-} */
+} 
 
 /* 
 Footer styles
 */
+
+footer {
+    padding-top: 1rem;
+    border-top: 1px var(--leafy-green) solid;
+    background-color: white;
+    height: fit-content;
+}
+
 .footer {
     padding-top: 1rem;
     border-top: 1px var(--leafy-green) solid;
