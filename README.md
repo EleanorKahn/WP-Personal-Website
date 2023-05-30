@@ -23,11 +23,17 @@
 - SASS 
 - NPM package manager 
 - dotenv
+- Postman for endpoint testing
 
-## Project Setup
+## Project setup/Cloning info
 
-#### Setting up Docker
+### Setting up Docker
 After downloading docker and putting together the docker-compose.yaml file (or cloning this one), run "docker compose up -d" to build the container associated with this project. 
+
+For more detail, see: https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42
+
+### Setting up React frontend
+cd into the frontend, and then run 'npm i,' which will install dependancies required to run the project. I have two start scripts - one that will run the frontend in the browser on a localhost via react-scripts, and one which runs the wordpress scripts. 
 
 
 ### Troubleshooting Wordpress
@@ -40,3 +46,4 @@ If, upon activating your custom theme, you find that you're faced with a blank w
 
 #### Notes
 There were some additional files that I included that I might otherwise have left out if I were more experieced with either custom themes or the WP/React integration. 
+
