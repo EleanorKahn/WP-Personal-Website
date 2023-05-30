@@ -23,6 +23,10 @@
 - SASS 
 - NPM package manager 
 
+## Project Setup
+#### Setting up Docker
+
+
 ### Troubleshooting Wordpress
 
 #### From HTTP to HTTPS
@@ -31,5 +35,5 @@ If, upon changing the url of your website, specifically from http to https, you 
 #### Activation of Custom Theme leads to "White Screen of Death"
 If, upon activating your custom theme, you find that you're faced with a blank white screen every time you attempt to access your site (often accompanied by the "there is a critical error..." message), you can go to phpmyadmin --> wp_options --> current theme, and reset this to the (correctly working) theme of your choice. While this does not address the errors in your custom theme, it will allow you to get back into your site.
 
-
-
+#### Notes
+There were some additional files that I included that I might otherwise have left out if I were more experieced with either custom themes or the WP/React integration. 
