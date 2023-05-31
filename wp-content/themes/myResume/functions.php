@@ -1,5 +1,12 @@
 <?php 
 
+function myResume_theme_support() {
+    // Adds dynamic title tag support
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'myResume_theme_support');
+
 function myResume_register_styles() {
     wp_enqueue_style(
         'myResume-bootstrap', 
