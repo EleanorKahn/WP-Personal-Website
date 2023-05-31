@@ -44,7 +44,7 @@ function myResumeTheme_menus(){
     register_nav_menus($locations);
 }
 
-add_action('init', 'sunsetTheme_menus');
+add_action('init', 'myResumeTheme_menus');
 
 add_action('wp_enqueue_scripts', 'enqueue_react_app_scripts');
 add_action('wp_enqueue_scripts', 'myResume_register_styles');
