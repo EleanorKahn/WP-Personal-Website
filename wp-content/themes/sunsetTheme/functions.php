@@ -8,6 +8,18 @@
 
     add_action('after_setup_theme', 'sunsetTheme_theme_support');
 
+    function sunsetTheme_menus(){
+        // key value pairs - key is menu location name, value is title
+        $locations = array(
+            'primary' => "Desktop Primary Left Sidebar",
+            'footer' => "Footer Menu Items"
+        );
+
+        register_nav_menus($locations);
+    }
+
+    add_action('init', 'sunsetTheme_menus');
+
 
 
     function sunsetTheme_register_styles(){
