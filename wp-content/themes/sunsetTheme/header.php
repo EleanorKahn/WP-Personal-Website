@@ -39,7 +39,7 @@
                 }
                 ?> 
 
-				<img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo" >
+				<img class="mb-3 mx-auto logo" src="./blog-site-template-master/images/logo.png" alt="logo" >
 
                 
                 <?php
