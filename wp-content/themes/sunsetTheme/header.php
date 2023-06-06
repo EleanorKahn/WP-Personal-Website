@@ -48,8 +48,8 @@
                             'menu' => 'primary',
                             'container' => '',
                             'theme_location' => 'primary',
-                            'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">&3$s</ul>'
-                        )
+                            'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+						),
                     );
                 ?>
 				
