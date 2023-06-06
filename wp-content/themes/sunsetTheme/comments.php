@@ -9,7 +9,7 @@
                         echo "Leave A Comment";
                     }
                     else{
-                        echo get_comments_count(). " Comments";
+                        echo get_comments_number(). " Comments";
                     }
                 ?>
             </h2><!-- .comments-title -->
@@ -19,7 +19,7 @@
                         wp_list_comments(
                             array(
                                 'avatar_size' => 120,
-                                'style' => 'div'
+                                'style' => 'div',
                             )
                         );
                     ?>
@@ -28,18 +28,17 @@
 	</div><!-- comments -->
 
         <hr class="" aria-hidden="true">
-        <div id="respond" class="comment-respond">
-            <h2 id="reply-title" class="comment-reply-title">
-                Leave a Reply 
-                <small>
-                    <a rel="nofollow"
-                        id="cancel-comment-reply-link" href="/?p=1#respond" style="display:none;">
-                        Cancel
-                        reply
-                    </a>
-                </small>
-            </h2>
-        </div><!-- #respond -->
+        <?php
+            if( comments_open() ){
+                comment_form(
+                    array(
+                        'class_form' => '',
+                        'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
+                        'title_reply_after' => '</h2>'
+                    ),
+                );
+            }
+        ?>
 	</div>
 
 </div>
