@@ -31,13 +31,13 @@
 
 			<div id="navigation" class="collapse navbar-collapse flex-column" >
 
-                <!-- <?php
+                <?php
                 if(function_exists('the_custom_logo')){
                     // the_custom_logo();
                     $custom_logo_id = get_theme_mod('custom_logo');
                     $logo = wp_get_attachment_image_src($custom_logo_id);
                 }
-                ?> -->
+                ?> 
 
 				<img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo" >
 
