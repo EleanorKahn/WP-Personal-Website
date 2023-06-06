@@ -275,7 +275,7 @@ h6 {
     display: none
 }
 
-.blog-nav .nav-link {
+.blog-nav a {
     background: var(--primary);
     color: #fff;
     font-size: 1rem;
