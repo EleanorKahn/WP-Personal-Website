@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "wp-start": "wp-scripts start",
     "build": "wp-scripts build",
+    "postbuild": "mv build ../wp-content/themes/myResume/assets",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
