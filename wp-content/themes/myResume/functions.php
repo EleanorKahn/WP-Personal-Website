@@ -41,11 +41,12 @@ function enqueue_react_scripts() {
 //         'footer' => "Footer Menu Items"
 //     );
 
-//     register_nav_menus($locations);
+//      register_nav_menus($locations);
 // }
 
 // add_action('init', 'myResumeTheme_menus');
 
 add_action('wp_enqueue_scripts', 'enqueue_react_app_scripts');
 add_action('wp_enqueue_scripts', 'myResume_register_styles');
+
 ?>

@@ -79,8 +79,14 @@
 					<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
 					<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
 				</ul>
+				<?php
+					dynamic_sidebar('sidebar-1');
+				?>
 
 			</div>
+
+			
+
 		</nav>
     </header>
     <div class="main-wrapper">

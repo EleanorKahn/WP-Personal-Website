@@ -92,4 +92,23 @@
         'wp_enqueue_scripts',
         'sunsettheme_register_scripts'
     );
+
+    function sunsetTheme_widget_areas(){
+        register_sidebar(
+            array(
+                'before_title' => '<ul>',
+                'after_title' => '</ul>',
+                'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+                'after_widget' => '</ul>',
+    
+            ),
+            array(
+                'name' => 'Sidebar Area',
+                'id' => 'sidebar-1',
+                'description' => 'Sidebar Widget Area'
+            )
+        );
+    }
+    
+    add_action('widgets_init', 'sunsetTheme_widget_areas');
 ?>
