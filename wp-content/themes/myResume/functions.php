@@ -7,46 +7,32 @@ function myResume_theme_support() {
 
 add_action('after_setup_theme', 'myResume_theme_support');
 
-function myResume_register_styles() {
-    wp_enqueue_style(
-        'myResume-styles', 
-        get_template_directory_uri() . "/style.css",
-        array(), 
-        '1.0', 
-        'all'
-    );
-}
-
 function enqueue_react_scripts() {
     wp_enqueue_script(
         'react-app-js',
-        '/frontend/public/index.js',
+        '/frontend/src/index.js',
         array(),
         '1.0',
         true
     );
 
+    var_dump("I'm running in enqueue react scripts!");
+
     wp_enqueue_style(
         'react-app-css',
-        '/frontend/src/css/style.css',
+        get_template_directory_uri() . "/style.css",
         array(),
         '1.0'
     );
 }
 
-// function myResumeTheme_menus(){
-//     // key value pairs - key is menu location name, value is title
-//     $locations = array(
-//         'primary' => "Desktop Primary Left Sidebar",
-//         'footer' => "Footer Menu Items"
-//     );
 
-//      register_nav_menus($locations);
-// }
+add_action('wp_enqueue_scripts', 'enqueue_react_scripts');
 
-// add_action('init', 'myResumeTheme_menus');
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'WP_DEBUG_LOG', true );
 
-add_action('wp_enqueue_scripts', 'enqueue_react_app_scripts');
-add_action('wp_enqueue_scripts', 'myResume_register_styles');
+//var_dump("I'm running in functions.php");
 
 ?>

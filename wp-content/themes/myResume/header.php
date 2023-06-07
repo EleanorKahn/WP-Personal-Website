@@ -8,4 +8,5 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+  <?php var_dump("I'm running in header.php"); ?>
     <div id="header"></div>
