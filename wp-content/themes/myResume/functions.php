@@ -10,7 +10,7 @@ add_action('after_setup_theme', 'myResume_theme_support');
 function enqueue_react_scripts() {
     wp_enqueue_script(
         'react-app-js',
-        '/frontend/src/index.js',
+        get_template_directory_uri() . '/assets/build/index.js',
         array(),
         '1.0',
         true
@@ -20,7 +20,7 @@ function enqueue_react_scripts() {
 
     wp_enqueue_style(
         'react-app-css',
-        get_template_directory_uri() . "/style.css",
+        get_template_directory_uri() . "/assets/build/index.css",
         array(),
         '1.0'
     );
