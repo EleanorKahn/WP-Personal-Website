@@ -61,7 +61,12 @@ Sitewide nav-link styling
 .nav-link {
     text-decoration: none;
     color: var(--coffee-brown);
+    /* transition: color .15s; */
 }
+
+/* .nav-link:hover {
+    color: var(--leafy-green);
+} */
 
 .nav-link:visited {
     color: var(--coffee-brown)
@@ -80,18 +85,15 @@ Sitewide nav-link styling
 Header styles
 */
 
-header {
-    border-bottom: 1px var(--leafy-green) solid;
-    background-color: white;
-    height: fit-content;
-}
-
-/* justify content flex end!! navbar collapse */
-
 .header {
     border-bottom: 1px var(--leafy-green) solid;
     background-color: white;
     height: fit-content;
+    padding-inline-end: 1rem;
+}
+
+.header .navbar-collapse {
+    justify-content: flex-end;
 }
 
 .header .header-icon {
@@ -120,6 +122,7 @@ header {
 .header .navigation-menu .nav-link:hover {
     border-bottom: 1.75px solid var(--daisy-yellow);
     border-right: 1.75px solid var(--daisy-yellow);
+    /* transition: var(--leafy-green) .15s; */
 }
 
 .header .navigation-menu .nav-link:last-child {
@@ -346,7 +349,7 @@ Media Queries for landing page text
     .navbar-expand-md .navbar-collapse {
         display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             align-items: center; 
     }
 }
