@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
+import Error from "../components/Error";
 
 const AboutPage = () => {
     const [aboutTitle, setAboutTitle] = useState('');
@@ -21,12 +22,10 @@ const AboutPage = () => {
             setAboutTitle(title);
             setAboutContent(content);
             setIsLoading(false);
-            console.log(data);
-            console.log(data[0]);
             return data;
         } catch(err) {
             console.log(`there has been an error! ${err}`);
-            setError(`An error occured while fetching this data`);
+            setError(`There has been an error in the call to fetch`);
         } finally {
             console.log("I am in the finally block");
         }
@@ -34,7 +33,9 @@ const AboutPage = () => {
 
     return (
         <div className='about-page'>
-            { isLoading
+            { error
+            ? <Error error={error}/>
+            : isLoading
             ? <Loading />
             : <section className='grid'>
                 <h2 dangerouslySetInnerHTML={{__html: aboutTitle}}></h2>

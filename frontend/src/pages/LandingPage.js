@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 const LandingPage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +18,6 @@ const LandingPage = () => {
             const response = await fetch('http://localhost:8000/wp-json/wp/v2/test-landing');
             const data = await response.json();
             setIsLoading(false);
-            console.log(data[0]);
             setHeading(data[0].title.rendered);
             setSubheading(data[0].content.rendered);
             return data;
@@ -32,7 +32,9 @@ const LandingPage = () => {
 
     return (
         <div className='landing-page'>
-            {isLoading
+            {error
+            ? <Error error={error}/>
+            : isLoading
             ? <Loading />
             : <>
                 <h2>{heading}</h2>
