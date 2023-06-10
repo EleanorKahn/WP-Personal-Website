@@ -33,6 +33,6 @@ define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG_LOG', true );
 
-//var_dump("I'm running in functions.php");
+var_dump("I'm running in functions.php");
 
 ?>
