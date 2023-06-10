@@ -2,7 +2,7 @@ import React from 'react'
 
 const Error = ({ error }) => {
     return (
-        <div>An error has occured: {error}</div>
+        <div className='error'>An error has occured: {error}</div>
     );
 };
 
