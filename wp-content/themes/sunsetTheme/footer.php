@@ -2,12 +2,13 @@
             <p class="copyright"><a href="https://youtube.com/FollowAndrew">FollowAndrew</a></p>
 	    </footer>
     </div>
+    <?php
+    get_search_form();
+    ?> 
 <?php
     wp_footer();
 ?>        
-<?php
-    get_search_form();
-?> 
+
 
 </body>
 </html> 
