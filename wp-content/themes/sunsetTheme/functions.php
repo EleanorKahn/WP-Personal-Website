@@ -93,31 +93,31 @@
         'sunsettheme_register_scripts'
     );
 
-    function sunsetTheme_widget_areas(){
-        register_sidebar(
-            array(
-                'before_title' => '<ul>',
-                'after_title' => '</ul>',
-                'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
-                'after_widget' => '</ul>',
-                'name' => 'Sidebar Area',
-                'id' => 'sidebar-1',
-                'description' => 'Sidebar Widget Area'
-            )
-        );
+    // function sunsetTheme_widget_areas(){
+    //     register_sidebar(
+    //         array(
+    //             'before_title' => '<ul>',
+    //             'after_title' => '</ul>',
+    //             'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+    //             'after_widget' => '</ul>',
+    //             'name' => 'Sidebar Area',
+    //             'id' => 'sidebar-1',
+    //             'description' => 'Sidebar Widget Area'
+    //         )
+    //     );
 
-        register_sidebar(
-            array(
-                'before_title' => '<ul>',
-                'after_title' => '</ul>',
-                'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
-                'after_widget' => '</ul>',
-                'name' => 'Footer Area',
-                'id' => 'footer-1',
-                'description' => 'Footer Widget Area'
-            )
-        );
-    }
+    //     register_sidebar(
+    //         array(
+    //             'before_title' => '<ul>',
+    //             'after_title' => '</ul>',
+    //             'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+    //             'after_widget' => '</ul>',
+    //             'name' => 'Footer Area',
+    //             'id' => 'footer-1',
+    //             'description' => 'Footer Widget Area'
+    //         )
+    //     );
+    // }
     
-    add_action('widgets_init', 'sunsetTheme_widget_areas');
+    // add_action('widgets_init', 'sunsetTheme_widget_areas');
 ?>
