@@ -4,6 +4,8 @@
 - set up a container to host the project using Docker
 - create a custom Wordpress theme
 - connect a frontend built using a JavaScript framework to a Wordpress site using the WP REST API
+- explore Wordpress, including custom post types and themes
+- familiarize myself with a SQL database
 - gain experience with php
 
 ## What I used 
