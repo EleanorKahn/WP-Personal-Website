@@ -2,11 +2,9 @@
 
 ## Goals 
 - set up a container to host the project using Docker
-- mimic a more professional deployment process
 - create a custom Wordpress theme
-- use SCSS/SASS to compile my stylesheets
-- gain experience with the useToggle() hook
 - connect a frontend built using a JavaScript framework to a Wordpress site using the WP REST API
+- gain experience with php
 
 ## What I used 
 - Wordpress CMS version 6.2.2
@@ -20,7 +18,6 @@
 - Bootstrap version 5.2.3
 - Reactstrap version ^9.1.10
 - Web vitals version ^2.1.4
-- SASS 
 - NPM package manager 
 - dotenv
 - Postman for endpoint testing
