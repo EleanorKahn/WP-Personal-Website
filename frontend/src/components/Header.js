@@ -19,8 +19,8 @@ const Header = () => {
                     <Nav className="horizontal navigation-menu" navbar>
                         <NavLink className='nav-link' to="/">Home</NavLink>
                         <NavLink className='nav-link' to="/about">About Me</NavLink>
-                        <NavLink className="nav-link" to="/">My Work</NavLink>
-                        <NavLink className="nav-link" to="/">Get in Touch</NavLink>
+                        <NavLink className="nav-link" to="/mywork">My Work</NavLink>
+                        <NavLink className="nav-link" to="/contact">Get in Touch</NavLink>
                     </Nav>
                 </Collapse>
             </Navbar>

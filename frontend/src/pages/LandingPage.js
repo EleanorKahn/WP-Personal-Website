@@ -37,6 +37,8 @@ const LandingPage = () => {
             : isLoading
             ? <Loading />
             : <>
+                {/* have experiemented with different ways of decorating this text
+                while being able to use dangerouslySetInnerHTML. Still troubleshooting */}
                 <h2>{heading}</h2>
                 <h3 dangerouslySetInnerHTML={{__html: subheading}}></h3>
                 <ul className='horizontal'>
