@@ -24,10 +24,4 @@ function App() {
   );
 };
 
-// ReactDOM.render(<Header id='header' />, document.querySelector('#header'));
-// ReactDOM.render(<Footer id='footer' />, document.querySelector('#footer'));
-// ReactDOM.render(<Loading id='loading' />, document.querySelector('#loading'));
-// ReactDOM.render(<LandingPage id='landing-page' />, document.querySelector('#landing-page'));
-// ReactDOM.render(<AboutPage id='about-page' />, document.querySelector('#about-page'));
-
 export default App;

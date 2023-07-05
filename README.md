@@ -1,5 +1,7 @@
 # WP-Custom-Resume
 
+My overall intention with this project was to have a place to become more familiar with WordPress integration with other frameworks, and well as custom themes. 
+
 ## Goals 
 - set up a container to host the project using Docker
 - create a custom Wordpress theme

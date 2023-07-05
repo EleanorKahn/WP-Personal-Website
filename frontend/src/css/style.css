@@ -85,6 +85,14 @@ Sitewide nav-link styling
     display: flex;
 }
 
+/*
+Not found styles
+*/
+
+.not-found {
+    text-align: center;
+}
+
 /* 
 Header styles
 */
