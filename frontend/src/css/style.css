@@ -70,7 +70,7 @@ Sitewide nav-link styling
 
 .nav-link:hover {
     color: var(--leafy-green);
-    transition: border-color 1s; 
+    transition: border-color .15s; 
 } 
 
 .nav-link:visited {
