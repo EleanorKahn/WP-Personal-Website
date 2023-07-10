@@ -70,7 +70,7 @@ Sitewide nav-link styling
 
 .nav-link:hover {
     color: var(--leafy-green);
-    transition: color .15s;
+    transition: border-color 1s; 
 } 
 
 .nav-link:visited {
@@ -145,7 +145,6 @@ Header styles
 .header .navigation-menu .nav-link:hover {
     border-bottom: 1.75px solid var(--daisy-yellow);
     border-right: 1.75px solid var(--daisy-yellow);
-    /* transition: border-color .15s; */
 }
 
 .header .navigation-menu .nav-link:last-child {
@@ -298,23 +297,29 @@ AboutPage styles
 }
 
 
+/*
+About page media queries for tablet view
+*/
+
 @media screen and (max-width: 1160px) { 
+    .about-page {
+        padding: 2rem;
+    }
     .about-page .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-flow: row wrap;
         height: fit-content;
-        width: fit-content;
     }
     
     .grid > *:nth-child(even) {
-        border-left: 1px solid var(--notebook-gray);
+        border-left: none;
         border-top: 1px solid var(--notebook-gray);
     }
     
     .about-page h2 {
-        text-align: center;
         margin-inline-end: 2rem;
-        font-size: 3rem;
+        margin-block-end: 1.5rem;
+        font-size: 3.5rem;
         letter-spacing: .25rem;
     }
     
@@ -324,6 +329,17 @@ AboutPage styles
         padding-inline: 2rem;
     }
 } 
+
+@media  screen and (max-width: 767px) {
+    .about-page .grid {
+        max-width: 100%;
+    }
+    .about-page .summary p {
+        color: var(--coffee-brown);
+        line-height: 1.75;
+        padding-inline: 1rem;
+    }
+}
 
 /* 
 Media Queries for landing page text
@@ -359,8 +375,7 @@ Media Queries for landing page text
     }
 }
 
-/* navigation media queries */
-
+/* navigation media queries for tablet view*/
 @media screen and (max-width: 767px) {
     .header .navigation-menu .nav-link:last-child {
         margin-inline-end: 2rem;
@@ -386,18 +401,10 @@ Media Queries for landing page text
     
 }
 
-@media screen and (max-width: 375px) {
-    /* .landing-page {
-        min-height: 300px;
-        background-size: cover;
-    } */
-}
-
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-collapse {
         display: flex;
             flex-flow: row wrap;
-            /* justify-content: space-between; */
             align-items: center; 
     }
 }
