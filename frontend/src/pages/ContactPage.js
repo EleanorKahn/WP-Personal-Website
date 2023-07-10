@@ -6,8 +6,7 @@ const ContactPage = () => {
     <div>
         <NotFound />
     </div>
+  );
+};
 
-  )
-}
-
-export default ContactPage
+export default ContactPage;
