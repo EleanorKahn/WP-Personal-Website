@@ -2,7 +2,343 @@
 Theme Name: myResume
 TextDomain: myResume
 Version: 1.0
-Description: 
-Tags: responsive
+Description: Minimalist but not harsh, inspired my nature
+Tags: responsive, minimalist, natural 
 Author: Eleanor Kahn 
+Author URI: https://github.com/EleanorKahn
 */
+
+/* 
+General styles
+*/
+:root {
+    --teapot-teal: #5eaaa7;
+    --coffee-brown: #090201;
+    --coffee-reflection: #776d6c;
+    --daisy-yellow: #9ac112;
+    --leafy-green: #385e26;
+    --notebook-gray: #a4a4a4;
+    --background-white: #eeeeee;
+}
+
+.root {
+    padding-bottom: 0rem;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.navigation-menu {
+    padding-left: 0px;
+}
+
+body {
+    padding-inline: 1rem;
+    margin: 0rem;
+    flex-grow: 1;
+    display: grid;
+    color: var(--coffee-brown);
+    min-height: 100vh;
+    background-color: var(white);
+    font-family: 'DM Sans', 'sans-serif';
+}
+
+i {
+    color: var(--coffee-brown);
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", "sans-serif";
+}
+
+/* 
+Sitewide nav-link styling
+*/
+.nav-link {
+    text-decoration: none;
+    color: var(--coffee-brown);
+}
+
+.nav-link:visited {
+    color: var(--coffee-brown)
+}
+
+.nav-link:active {
+    color: var(--daisy-yellow)
+}
+
+/* list items laid out along main axis */
+.horizontal {
+    display: flex;
+}
+
+/* 
+Header styles
+*/
+.header {
+    border-bottom: 1px var(--leafy-green) solid;
+    background-color: white;
+    height: fit-content;
+}
+
+.header #nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; 
+} 
+
+.header .header-icon {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Oswald", 'sans-serif';
+    letter-spacing: .15rem;
+    text-shadow: .5px .5px 1px var(--coffee-brown);
+    text-decoration: none;
+}
+
+.header-icon span {
+    color: var(--daisy-yellow);
+} 
+
+.header .navigation-menu {
+    padding-inline: .5rem;
+} 
+
+.header .navigation-menu .nav-link {
+    border-bottom: 1.75px solid var(--teapot-teal);
+    padding: .3rem;
+    margin-right: 2rem;
+}
+
+.header .navigation-menu .nav-link:hover {
+    border-bottom: 1.75px solid var(--daisy-yellow);
+    border-right: 1.75px solid var(--daisy-yellow);
+}
+
+.header .navigation-menu .nav-link:last-child {
+    margin-inline-end: 0rem;
+} */
+
+/* 
+Footer styles
+*/
+.footer {
+    padding-top: 1rem;
+    border-top: 1px var(--leafy-green) solid;
+    background-color: white;
+    height: fit-content;
+}
+
+.footer .horizontal {
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.footer li {
+    border: 1.5px solid var(--teapot-teal);
+    padding: .5rem .75rem;
+}
+
+.footer li:hover,
+.footer li:focus {
+    border: 1.5px solid var(--daisy-yellow)
+}
+
+.footer li:active {
+    color: var(--leafy-green)
+}
+
+#social-holder {
+    border: none;
+    padding: 0rem;
+    justify-content: center;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-bottom: 0rem;
+}
+
+#social li {
+    border: none;
+    margin-right: 5px;
+    padding-inline: .25rem;
+}
+
+/* 
+LandingPage styles
+*/
+.landing-page {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets//images/desk-2325627_1920.jpg");
+    background-size: cover;    
+}
+
+.landing-page h2 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: var(--leafy-green);
+    letter-spacing: .25rem;
+    margin-bottom: .5rem;
+    text-shadow: 1px 1px 2px var(--coffee-brown);
+}
+
+.landing-page h3 {
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    font-family: 'DM Serif Display', 'serif';
+    letter-spacing: .25rem;
+    font-size: 2rem;
+}
+
+.landing-page ul {
+    margin-top: 0rem;
+}
+
+.landing-page li {
+    padding-inline: .5rem;
+}
+
+/* 
+AboutPage styles
+*/
+.about-page {
+    background-image: url("../assets/images/desk-2325627_1280.jpg");
+    background-size: cover; 
+    display: grid;
+    place-content: center;
+    flex-grow: 1;
+    padding: 4rem;
+    height: fit-content;
+    /* overflow: scroll; */
+}
+
+.about-page .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    align-items: center;
+    place-content: center; 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.grid > *:nth-child(even) {
+    border-left: 1px solid var(--notebook-gray);
+}
+
+.about-page h2 {
+    text-align: center;
+    margin-right: 2rem;
+    font-size: 5rem;
+    letter-spacing: .25rem;
+}
+
+.about-page .summary p {
+    color: var(--coffee-brown);
+    line-height: 1.75;
+    padding-inline: 4rem;
+}
+
+.about-page .summary > p::first-line {
+    font-size: large;
+}
+
+.about-page .summary > p::first-letter {
+    font-size: 2rem;
+}
+
+/* 
+Media queries @ 525
+*/
+
+@media screen and (max-width: 1036px) { 
+    .about-page .grid {
+        grid-template-rows: 1fr;
+    }
+}
+
+/* 
+Media Queries for landing page text
+*/
+
+@media screen and (max-width: 802px) {
+    .landing-page h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        color: var(--leafy-green);
+        letter-spacing: .2rem;
+        margin-bottom: .75rem;
+    }
+    .landing-page h3 {
+        font-family: 'serif';
+        letter-spacing: .25rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .landing-page h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        color: var(--leafy-green);
+        letter-spacing: .2rem;
+        margin-bottom: .5rem;
+    }
+    .landing-page h3 {
+        font-family: 'serif';
+        letter-spacing: .2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 659px) {
+
+    .footer .footer-navigation {
+        justify-content: center;
+        padding-bottom: 0rem;
+    }
+    .footer .footer-navigation li {
+        width: 51%;
+        margin-bottom: .3rem;  
+        text-align: center;
+        padding: .3rem .6rem;
+        font-size: .9rem;
+    }
+    .footer .footer-navigation li:last-child {
+        margin-bottom: 0rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    /* .landing-page {
+        min-height: 300px;
+        background-size: cover;
+    } */
+}
+

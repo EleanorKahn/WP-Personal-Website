@@ -4,6 +4,7 @@
 /wp-content/themes/twentytwentyone
 /wp-content/themes/twentytwentythree
 /wp-content/themes/twentytwentytwo
+/wp-content/themes/myResume/assets/build
 
 wp-activate.php
 wp-blog-header.php
@@ -22,3 +23,9 @@ wp-trackback.php
 xmlrpc.php
 
 /frontend/node_modules
+/node_modules
+
+auth.env
+.env
+
+

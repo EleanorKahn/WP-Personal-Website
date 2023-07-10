@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
+import { Navbar, Nav, NavbarBrand, Collapse, NavbarToggler } from "reactstrap";
 
 const Header = () => {
+    const [menuOpen, setmenuOpen] = useState(true);
+    const toggleNavbar = () => setmenuOpen(!menuOpen);
+
     return (
         <div className="header">
-            <nav>
-                <h1>
-                    <NavLink to="/">Character</NavLink>
-                </h1>
-                <ul className='horizontal'>
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about">About Me</NavLink>
-                    </li>
-                    <li>My Work</li>
-                    <li>Get in Touch</li>
-                </ul>
-            </nav>
+            <Navbar className="nav " id="nav" expand="md" style={{}}>
+                <NavbarBrand href="/">
+                    <h1 className='header-icon'>
+                        <NavLink className='nav-link' to="/">&lt;<span className=''>EK</span>/&gt;</NavLink>
+                    </h1>
+                </NavbarBrand>
+                <NavbarToggler onClick={() => toggleNavbar()}/>
+                <Collapse isOpen={!menuOpen} navbar>
+                    <Nav className="horizontal navigation-menu" navbar>
+                        <NavLink className='nav-link' to="/">Home</NavLink>
+                        <NavLink className='nav-link' to="/about">About Me</NavLink>
+                        <NavLink className="nav-link" to="/mywork">My Work</NavLink>
+                        <NavLink className="nav-link" to="/contact">Get in Touch</NavLink>
+                    </Nav>
+                </Collapse>
+            </Navbar>
         </div>
     );
 };
