@@ -25,7 +25,8 @@ const AboutPage = () => {
             return data;
         } catch(err) {
             console.log(`there has been an error! ${err}`);
-            setError(`There has been an error in the call to fetch`);
+            setIsLoading(false);
+            setError(`There has been an error in the call to fetch: ${err}`);
         } finally {
             console.log("I am in the finally block");
         }
