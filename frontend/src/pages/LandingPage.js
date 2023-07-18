@@ -24,7 +24,7 @@ const LandingPage = () => {
         } catch(err) {
             console.log(`${err}`);
             setIsLoading(false);
-            setError(`There has been an error in the call to fetch`);
+            setError(`There has been an error in the call to fetch: ${err}`);
         } finally {
             console.log('this is the finally block');
         }
@@ -37,19 +37,21 @@ const LandingPage = () => {
             : isLoading
             ? <Loading />
             : <>
+                {/* have experiemented with different ways of decorating this text
+                while being able to use dangerouslySetInnerHTML. Still troubleshooting */}
                 <h2>{heading}</h2>
                 <h3 dangerouslySetInnerHTML={{__html: subheading}}></h3>
                 <ul className='horizontal'>
-                    <li><i className="fa-brands fa-react fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-js fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-css3-alt fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-html5 fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-bootstrap fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-github fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-node fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-npm fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-php fa-2xl"></i></li>
-                    <li><i className="fa-brands fa-wordpress fa-2xl"></i></li>
+                    <li><i className='fa-brands fa-react fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-js fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-css3-alt fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-html5 fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-bootstrap fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-github fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-node fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-npm fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-php fa-2xl'></i></li>
+                    <li><i className='fa-brands fa-wordpress fa-2xl'></i></li>
                 </ul>
                 </>
             }

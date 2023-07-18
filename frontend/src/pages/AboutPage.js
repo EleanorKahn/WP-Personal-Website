@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
-import Error from "../components/Error";
+import Error from '../components/Error';
 
 const AboutPage = () => {
     const [aboutTitle, setAboutTitle] = useState('');
@@ -15,7 +15,7 @@ const AboutPage = () => {
     const requestAbout = async() => {
         try {
             setIsLoading(true);
-            const response = await fetch("http://localhost:8000/wp-json/wp/v2/aboutme");
+            const response = await fetch('http://localhost:8000/wp-json/wp/v2/aboutme');
             const data = await response.json();
             const title = data[0].title.rendered;
             const content = data[0].content.rendered;
@@ -25,9 +25,10 @@ const AboutPage = () => {
             return data;
         } catch(err) {
             console.log(`there has been an error! ${err}`);
-            setError(`There has been an error in the call to fetch`);
+            setIsLoading(false);
+            setError(`There has been an error in the call to fetch: ${err}`);
         } finally {
-            console.log("I am in the finally block");
+            console.log('I am in the finally block');
         }
     }
 
