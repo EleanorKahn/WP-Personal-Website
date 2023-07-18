@@ -57,7 +57,7 @@ If, upon activating your custom theme, you find that you're faced with a blank w
 - Creating the Contact form for the React frontend
 - Creating the the "projects" custom post types with advanced custom fields.  
 
-### I'm currently stuck on...
+### I'm currently stuck on... and next action
 - widget support on my WP sunsetTheme
 
 - The integration between the React frontend and WP custom themes using the process outlined here: https://github.com/LearnWebCode/brads-boilerplate-WordPress/tree/main/brads-boilerplate-theme. 
@@ -65,28 +65,46 @@ If, upon activating your custom theme, you find that you're faced with a blank w
 I am hoping to connect with devs familiar with the WP/React integration on the 'Developing With WP' forum. If it appears that it isn't possible, I will explore utilizing Frontity. 
 
 ## Images
+
 ### React frontend serving WP custom posts through the WP REST API
 
 Landing Page, Desktop and Tablet view
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/458FFEF3-8327-4107-B58A-A09C6A0EC439_1_201_a.jpeg)
+
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/FD54ACF7-AF82-4325-ACA6-69B9B4665DD0_1_201_a.jpeg)
 
 About Page, Desktop and Tablet view
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/AB975E84-E557-4A20-9618-44B0D917C89E_1_201_a.jpeg)
+
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/6D46E329-CE58-431B-93E1-AF4225A1C699_1_201_a.jpeg)
 
 404 Not Found
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/2C22C73B-AEAE-4E5E-A43F-9F90FFA7A66A_1_201_a.jpeg)
 
 ### Custom WP Theme with jQuery, Popper, and Bootstrap
 My intro to custom WP themes! It has theme support for post thumbnails, custom logos, title tags, and custom sidebars. Widget support is in the works. See wp-content/themes/sunsetTheme.
 
+Please note that all text is sample text. 
+
 Home Page
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/51AD3376-860A-4E84-B41F-F51B9E86FB43_1_201_a.jpeg)
 
 Page Not Found
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/159B91F4-3411-41BD-92A4-2EE295FF02FA_1_201_a.jpeg)
 
 Sample Page
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/C6D303B9-21CC-4E20-8310-7B372E762174_1_201_a.jpeg)
 
 About Me
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/F74A96D2-7974-4842-AA39-4D4656578A74_1_201_a.jpeg)
 
 Blog with pagination
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/FF2FC2B1-84F0-4061-8986-808826237910_1_201_a.jpeg)
+
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/454075AB-7AFC-4DF8-B113-B5272640B236_1_201_a.jpeg)
 
 Individual post with comments, nested comments
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/3D41E67B-D5CC-4A97-A88F-F994E07A6AB3_1_201_a.jpeg)
 
 #### Notes
 There were some additional files that I included that I might otherwise have left out if I were more experieced with either custom themes or the WP/React integration. 
