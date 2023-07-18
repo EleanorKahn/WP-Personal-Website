@@ -7,7 +7,7 @@
 
 ## Goals 
 - set up a container to host the project using Docker
-- explore the process of creating custom WordPress themes
+- explore the process of creating custom WordPress themes with Andrew Wilson https://www.youtube.com/watch?v=-h7gOJbIpmo
 - create a custom WordPress theme based on an original design
 - connect a frontend built using a JavaScript framework to a WordPress site using the WP REST API
 - explore WordPress, including custom post types and themes
