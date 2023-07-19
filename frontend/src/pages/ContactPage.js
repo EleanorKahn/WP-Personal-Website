@@ -1,10 +1,10 @@
 import React from 'react';
-import NotFound from '../components/NotFound';
+import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
   return (
     <div>
-        <NotFound />
+        <ContactForm />
     </div>
   );
 };
