@@ -5,32 +5,33 @@ import { Input, Label, Form, FormGroup } from 'reactstrap';
 const ContactForm = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState("");
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     return (
-        <div>
-            <Form>
+        <div className='contact-form'>
+            <Form className='form'>
                 <FormGroup>
-                <Label htmlFor='firstName'>
-                    First name 
-                </Label>
-                <Input 
-                    type='text'
-                    id='firstName'
-                    value={firstName}
-                    onChange={(value) => setFirstName(value)}
-                />
+                    <Label htmlFor='firstName'>
+                        First name 
+                    </Label>
+                    <Input 
+                        type='text'
+                        id='firstName'
+                        value={firstName}
+                        onChange={(value) => setFirstName(value)}
+                    />
                 </FormGroup>
                 <FormGroup>
-                <Label htmlFor='lastName'>
-                    Last name 
-                </Label>
-                <Input 
-                    type='text'
-                    id='lastName'
-                    value={lastName}
-                    onChange={(value) => setLastName(value)}
-                />
+                    <Label htmlFor='lastName'>
+                        Last name 
+                    </Label>
+                    <Input 
+                        type='text'
+                        id='lastName'
+                        value={lastName}
+                        onChange={(value) => setLastName(value)}
+                    />
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor='email'>
@@ -48,9 +49,9 @@ const ContactForm = () => {
                         Your message
                     </Label>
                     <Input 
-                        type='text-area'
+                        type='textarea'
                         id='message'
-                        value={email}
+                        value={message}
                         onChange={(value) => setEmail(value)}
                     />
                 </FormGroup>

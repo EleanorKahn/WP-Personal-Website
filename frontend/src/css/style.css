@@ -300,6 +300,16 @@ AboutPage styles
 Contact Page styles
 */
 
+.contact-form {
+    padding: 2rem;
+}
+
+.form {
+    border: 1px solid var(--coffee-brown);
+    border-radius: 2.5%;
+    padding: 2rem;
+}
+
 
 /*
 About page media queries for tablet view
