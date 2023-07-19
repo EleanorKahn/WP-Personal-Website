@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Input, Label, Form, FormGroup } from 'reactstrap';
 
 // inital mockup
 const ContactForm = () => {
