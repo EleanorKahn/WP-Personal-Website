@@ -43,6 +43,17 @@ const ContactForm = () => {
                         onChange={(value) => setEmail(value)}
                     />
                 </FormGroup>
+                <FormGroup>
+                    <Label htmlFor='message'>
+                        Your message
+                    </Label>
+                    <Input 
+                        type='text-area'
+                        id='message'
+                        value={email}
+                        onChange={(value) => setEmail(value)}
+                    />
+                </FormGroup>
                 <button type='submit'>Submit</button>
             </Form>
         </div>
