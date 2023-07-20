@@ -34,6 +34,7 @@ const ContactForm = () => {
                             <Input 
                                 type='text'
                                 id='firstName'
+                                placeholder='Jane'
                                 value={firstName}
                                 onChange={(firstName) => setFirstName(firstName)}
                             />
@@ -51,6 +52,7 @@ const ContactForm = () => {
                             <Input 
                                 type='text'
                                 id='lastName'
+                                placeholder='Doe'
                                 value={lastName}
                                 onChange={(value) => setLastName(value)}
                             />
@@ -68,6 +70,7 @@ const ContactForm = () => {
                     <Input 
                         type='email'
                         id='email'
+                        placeholder='janedoe@JD.com'
                         value={email}
                         onChange={(value) => setEmail(value)}
                     />
@@ -88,6 +91,7 @@ const ContactForm = () => {
                 </FormGroup>
                 <Button 
                     type='submit'
+                    className='submit'
                     onClick={(e) => handleSubmit(e)}
                 >
                     Submit

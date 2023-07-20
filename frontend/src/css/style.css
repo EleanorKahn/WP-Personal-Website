@@ -302,12 +302,44 @@ Contact Page styles
 
 .contact-form {
     padding: 2rem;
+    background-image: url("../assets/images/desk-2325627_1280.jpg");
 }
 
 .form {
     border: 1px solid var(--coffee-brown);
-    border-radius: 2.5%;
+    border-radius: 2%;
     padding: 2rem;
+    width: 75%;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.form-label {
+    color: var(--coffee-brown)
+}
+
+.submit {
+    border: 1.75px solid var(--teapot-teal);
+    padding-block: .5rem;
+    border-radius: 0%;
+    background-color: white;
+    width: 10rem;
+    color: var(--coffee-brown);
+}
+
+.submit:hover{
+    border-color: var(--daisy-yellow);
+    /* I don't like the gray below -- too dark CHANGE */
+    background-color: var(--notebook-gray);
+}
+
+.form .submit:focus {
+    border-color: var(--daisy-yellow);
+}
+
+.form .submit:active {
+    color: var(--daisy-yellow);
+    background-color: white;
+    border-color: var(--daisy-yellow);
 }
 
 
