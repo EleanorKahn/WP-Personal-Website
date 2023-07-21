@@ -54,15 +54,16 @@ If, upon activating your custom theme, you find that you're faced with a blank w
 ## Current 
 
 ### I'm currently working on...
-- Creating the Contact form for the React frontend
-- Creating the the "projects" custom post types with advanced custom fields.  
+- Fetching and displaying project posts in a Projects List component rendered to the My Work page
+- Validating form data 
+- Doing screen reader testing on the Contact Form to ensure accessibility 
 
 ### I'm currently stuck on... and next action
-- widget support on my WP sunsetTheme
+- widget support on my WP sunsetTheme. I am looking at the "widgetizing themes" section of the WP theme docs to find my code mistake: https://codex.wordpress.org/Widgetizing_Themes. I will then reach out to ask for help if I find I am still stuck.
 
 - The integration between the React frontend and WP custom themes using the process outlined here: https://github.com/LearnWebCode/brads-boilerplate-WordPress/tree/main/brads-boilerplate-theme. 
 
-I am hoping to connect with devs familiar with the WP/React integration on the 'Developing With WP' forum. If it appears that it isn't possible, I will explore utilizing Frontity. 
+I am hoping to connect with devs familiar with the WP/React integration on the 'Developing With WP' forum. If it appears that the WP/React integration as outlined in the link above isn't possible, I will explore utilizing Frontity. 
 
 ## Images
 
@@ -80,6 +81,9 @@ About Page, Desktop and Tablet view
 
 404 Not Found
 ![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/2C22C73B-AEAE-4E5E-A43F-9F90FFA7A66A_1_201_a.jpeg)
+
+Contact Me - PRELIMINARY 
+
 
 ### Custom WP Theme with jQuery, Popper, and Bootstrap
 My intro to custom WP themes! It has theme support for post thumbnails, custom logos, title tags, and custom sidebars. Widget support is in the works. See wp-content/themes/sunsetTheme.
@@ -107,5 +111,14 @@ Individual post with comments, nested comments
 ![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/3D41E67B-D5CC-4A97-A88F-F994E07A6AB3_1_201_a.jpeg)
 
 #### Notes
-There were some additional files that I included that I might otherwise have left out if I were more experieced with either custom themes or the WP/React integration. 
+
+#### Extra Files
+There were some additional files that I included that I might otherwise have left out if I were more experieced with either custom themes or the WP/React integration. This enabled me to troubleshoot with others more effectively. 
+
+#### Forms
+I decided to utilize Reactstrap components for my form (even though it's an extremely simple form) specifically because I wanted to gain additional experience inspecting the cascade to override some of the Reactstrap/Bootstrap components' built in styles with vanilla CSS. This method has given me a better understanding of both Bootstrap under the hood and the CSS cascade. 
+
+My favorite article on forms in React: https://daveceddia.com/react-forms/
+
+
 
