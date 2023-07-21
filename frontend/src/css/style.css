@@ -318,10 +318,9 @@ Contact Page styles
     color: var(--coffee-brown)
 }
 
-/* .form .input:hover,
 .form .input:focus {
-
-} */
+    box-shadow: 2.5px 2.5px 10px var(--teapot-teal), inset 2.5px 2.5px 10px var(--teapot-teal);
+}
 
 .submit {
     border: 1.75px solid var(--teapot-teal);
@@ -334,10 +333,10 @@ Contact Page styles
 
 .form .submit:hover,
 .form .submit:focus {
-    border-color: var(--daisy-yellow);
-    /* I don't like the gray below -- too dark CHANGE */
+    /* border: 2px solid var(--daisy-yellow); */
     background-color: white;
     color: var(--coffee-brown);
+
 }
 
 .form .submit:active {
