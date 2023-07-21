@@ -300,22 +300,28 @@ AboutPage styles
 Contact Page styles
 */
 
-.contact-form {
+.contact-page {
     padding: 2rem;
     background-image: url("../assets/images/desk-2325627_1280.jpg");
 }
 
-.form {
-    border: 1px solid var(--coffee-brown);
-    border-radius: 2%;
+.contact-form {
+    /* border: .5px solid var(--coffee-brown); */
+    /* border-radius: 1%; */
     padding: 2rem;
     width: 75%;
     background-color: rgba(255, 255, 255, .75);
+    box-shadow: 25px 25px 15px rgba(37, 37, 37, 0.1);
 }
 
 .form-label {
     color: var(--coffee-brown)
 }
+
+/* .form .input:hover,
+.form .input:focus {
+
+} */
 
 .submit {
     border: 1.75px solid var(--teapot-teal);
@@ -326,14 +332,12 @@ Contact Page styles
     color: var(--coffee-brown);
 }
 
-.submit:hover{
-    border-color: var(--daisy-yellow);
-    /* I don't like the gray below -- too dark CHANGE */
-    background-color: var(--notebook-gray);
-}
-
+.form .submit:hover,
 .form .submit:focus {
     border-color: var(--daisy-yellow);
+    /* I don't like the gray below -- too dark CHANGE */
+    background-color: white;
+    color: var(--coffee-brown);
 }
 
 .form .submit:active {

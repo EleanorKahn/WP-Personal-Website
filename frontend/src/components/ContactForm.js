@@ -15,89 +15,100 @@ const ContactForm = () => {
         console.log(email);
         console.log(message);
 
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setMessage('');
     }
 
     return (
-        <div className='contact-form'>
-            <Container>
-            <Form className='form'>
-                <Row>
-                <Col md={6}>
-                    <FormGroup>
-                        
-                            <Label                      
-                                htmlFor='firstName'
-                                className='form-label'
-                            >
-                                First name 
-                            </Label>
-                            <Input 
-                                type='text'
-                                id='firstName'
-                                placeholder='Jane'
-                                value={firstName}
-                                onChange={(firstName) => setFirstName(firstName)}
-                            />
-                            </FormGroup>
-                        </Col>
+        <div className='contact-page'>
+            <div className='contact-form'>
+            <h3>Contact Me</h3>
+                <Container>
+                    <Form className='form'>
+                        <Row>
                         <Col md={6}>
-                    <FormGroup>
-                        
-                            <Label                      
-                                htmlFor='lastName'
+                            <FormGroup>
+                                
+                                    <Label                      
+                                        htmlFor='firstName'
+                                        className='form-label'
+                                    >
+                                        First name 
+                                    </Label>
+                                    <Input 
+                                        className='input'
+                                        type='text'
+                                        id='firstName'
+                                        placeholder='Jane'
+                                        value={firstName}
+                                        onChange={(e) => setFirstName(e.target.value)}
+                                    />
+                                    </FormGroup>
+                                </Col>
+                                <Col md={6}>
+                            <FormGroup>
+                                
+                                    <Label                      
+                                        htmlFor='lastName'
+                                        className='form-label'
+                                    >
+                                        Last name 
+                                    </Label>
+                                    <Input 
+                                        className='input'
+                                        type='text'
+                                        id='lastName'
+                                        placeholder='Doe'
+                                        value={lastName}
+                                        onChange={(e) => setLastName(e.target.value)}
+                                    />
+                                    </FormGroup>
+                                </Col>
+                            
+                        </Row>
+                        <FormGroup>
+                            <Label 
+                                htmlFor='email'
                                 className='form-label'
                             >
-                                Last name 
+                                Email
                             </Label>
                             <Input 
-                                type='text'
-                                id='lastName'
-                                placeholder='Doe'
-                                value={lastName}
-                                onChange={(value) => setLastName(value)}
+                                className='input'
+                                type='email'
+                                id='email'
+                                placeholder='janedoe@JD.com'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                             />
-                            </FormGroup>
-                        </Col>
-                    
-                </Row>
-                <FormGroup>
-                    <Label 
-                        htmlFor='email'
-                        className='form-label'
-                    >
-                        Email
-                    </Label>
-                    <Input 
-                        type='email'
-                        id='email'
-                        placeholder='janedoe@JD.com'
-                        value={email}
-                        onChange={(value) => setEmail(value)}
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Label 
-                        htmlFor='message'
-                        className='form-label'
+                        </FormGroup>
+                        <FormGroup>
+                            <Label 
+                                htmlFor='message'
+                                className='form-label'
+                                >
+                                Your message
+                            </Label>
+                            <Input 
+                                className='input'
+                                type='textarea'
+                                id='message'
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
+                        </FormGroup>
+                        <Button 
+                            type='submit'
+                            className='submit'
+                            onClick={(e) => handleSubmit(e)}
                         >
-                        Your message
-                    </Label>
-                    <Input 
-                        type='textarea'
-                        id='message'
-                        value={message}
-                        onChange={(value) => setMessage(value)}
-                    />
-                </FormGroup>
-                <Button 
-                    type='submit'
-                    className='submit'
-                    onClick={(e) => handleSubmit(e)}
-                >
-                    Submit
-                </Button>
-            </Form>
-            </Container>
+                            Submit
+                        </Button>
+                    </Form>
+                </Container>
+            </div>
         </div>
     );
 };
