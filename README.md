@@ -83,7 +83,7 @@ About Page, Desktop and Tablet view
 ![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/2C22C73B-AEAE-4E5E-A43F-9F90FFA7A66A_1_201_a.jpeg)
 
 Contact Me - PRELIMINARY 
-
+![alt text](https://github.com/EleanorKahn/WP-Personal-Website/blob/development/project-screenshots/6DABFDA9-1C4F-46EF-9104-26AFB0B3421C_1_201_a.jpeg)
 
 ### Custom WP Theme with jQuery, Popper, and Bootstrap
 My intro to custom WP themes! It has theme support for post thumbnails, custom logos, title tags, and custom sidebars. Widget support is in the works. See wp-content/themes/sunsetTheme.
