@@ -3,22 +3,31 @@ import { Input, Label, Form, FormGroup, Button, Row, Col, Container } from 'reac
 
 // inital mockup
 const ContactForm = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [values, setValues] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: ''
+    });
 
+    //changes to state need to be reflected in UI
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(firstName);
-        console.log(lastName);
-        console.log(email);
-        console.log(message);
+        console.log(values);
 
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setMessage('');
+        setValues({
+            firstName: '',
+            lastName: '',
+            email: '',
+            message: ''
+        });
+    }
+
+    const handleChange = (e) => {
+        setValues({
+            ...values,
+            [e.target.name]: e.target.value
+        });
     }
 
     return (
@@ -41,9 +50,10 @@ const ContactForm = () => {
                                         className='input'
                                         type='text'
                                         id='firstName'
+                                        name='firstName'
                                         placeholder='Jane'
-                                        value={firstName}
-                                        onChange={(e) => setFirstName(e.target.value)}
+                                        // value={firstName}
+                                        onChange={(e) => handleChange(e)}
                                     />
                                     </FormGroup>
                                 </Col>
@@ -60,9 +70,10 @@ const ContactForm = () => {
                                         className='input'
                                         type='text'
                                         id='lastName'
+                                        name='lastName'
                                         placeholder='Doe'
-                                        value={lastName}
-                                        onChange={(e) => setLastName(e.target.value)}
+                                        // value={lastName}
+                                        onChange={(e) => handleChange(e)}
                                     />
                                     </FormGroup>
                                 </Col>
@@ -79,9 +90,10 @@ const ContactForm = () => {
                                 className='input'
                                 type='email'
                                 id='email'
+                                name='email'
                                 placeholder='janedoe@JD.com'
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                // value={email}
+                                onChange={(e) => handleChange(e)}
                             />
                         </FormGroup>
                         <FormGroup>
@@ -95,8 +107,9 @@ const ContactForm = () => {
                                 className='input'
                                 type='textarea'
                                 id='message'
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
+                                name='message'
+                                // value={message}
+                                onChange={(e) => handleChange(e)}
                             />
                         </FormGroup>
                         <Button 
