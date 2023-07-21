@@ -86,24 +86,6 @@ Sitewide nav-link styling
     display: flex;
 }
 
-/*
-Not found styles
-*/
-
-.not-found {
-    display: grid;
-    place-items: center;
-    height: 72.5vh;
-    background-image: url("../assets//images/desk-2325627_1920.jpg");
-    background-size: cover;  
-}
-
-.not-found h3 {
-    font-size: 5rem;
-    color: var(--daisy-yellow);
-    text-shadow: 1px 1px 2px var(--leafy-green);
-}
-
 /* 
 Header styles
 */
@@ -297,17 +279,36 @@ AboutPage styles
 }
 
 /*
+Not found styles
+*/
+
+.not-found {
+    display: grid;
+    place-items: center;
+    height: 72.5vh;
+    background-image: url("../assets//images/desk-2325627_1920.jpg");
+    background-size: cover;  
+}
+
+.not-found h3 {
+    font-size: 5rem;
+    color: var(--daisy-yellow);
+    text-shadow: 1px 1px 2px var(--leafy-green);
+}
+
+/*
 Contact Page styles
 */
 
 .contact-page {
     padding: 2rem;
     background-image: url("../assets/images/desk-2325627_1280.jpg");
+    background-size: cover; 
+    display: grid;
+    place-items: center;
 }
 
 .contact-form {
-    /* border: .5px solid var(--coffee-brown); */
-    /* border-radius: 1%; */
     padding: 2rem;
     width: 75%;
     background-color: rgba(255, 255, 255, .75);
@@ -333,7 +334,7 @@ Contact Page styles
 
 .form .submit:hover,
 .form .submit:focus {
-    /* border: 2px solid var(--daisy-yellow); */
+    border: 2px solid var(--daisy-yellow); 
     background-color: white;
     color: var(--coffee-brown);
 
