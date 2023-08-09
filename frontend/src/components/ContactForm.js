@@ -21,6 +21,8 @@ const ContactForm = () => {
             email: '',
             message: ''
         });
+
+        
     }
 
     const handleChange = (e) => {
