@@ -3,9 +3,8 @@ import NotFound from '../components/NotFound';
 
 const MyWorkPage = () => {
 
-    
     return (
-        <div>
+        <div className='my-work-page'>
             <NotFound />
         </div>
     );

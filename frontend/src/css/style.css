@@ -306,6 +306,7 @@ Contact Page styles
     background-size: cover; 
     display: grid;
     place-items: center;
+    height: 72.5vh;
 }
 
 .contact-form {
@@ -320,7 +321,7 @@ Contact Page styles
 }
 
 .form .input:focus {
-    box-shadow: 2.5px 2.5px 10px var(--teapot-teal), inset 2.5px 2.5px 10px var(--teapot-teal);
+    box-shadow: 1.5px 1.5px 10px var(--teapot-teal), inset 1.5px 1.5px 10px var(--teapot-teal);
 }
 
 .submit {
