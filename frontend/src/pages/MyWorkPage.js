@@ -8,7 +8,7 @@ const MyWorkPage = () => {
     let projects = null;
 
     const requestWork = async () => {
-        const URL = 'http://localhost:8000/wp-json/wp/v2/projects/';
+        const URL = 'http://localhost:8000/wp-json/wp/v2/project';
         const response = await fetch(URL);
         const data = await response.json();
         projects = data;
