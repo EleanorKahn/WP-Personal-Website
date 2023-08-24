@@ -30,7 +30,7 @@ const MyWorkPage = () => {
             {projects.length && !loading &&
                 <div>
                     {projects.map((project, idx) => {
-                        console.log(project.title.rendered);
+                        console.log(project);
                         return <Project key={idx} project={project}/>
                         
                     })}
