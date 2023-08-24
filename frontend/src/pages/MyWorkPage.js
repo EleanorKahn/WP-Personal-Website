@@ -29,9 +29,10 @@ const MyWorkPage = () => {
         <div className='my-work-page'>
             {projects.length && !loading &&
                 <div>
-                    {projects.map((project) => {
+                    {projects.map((project, idx) => {
                         console.log(project.title.rendered);
-                        return <Project />
+                        return <Project key={idx} project={project}/>
+                        
                     })}
                 </div>}
             <NotFound />

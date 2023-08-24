@@ -1,8 +1,14 @@
 import React from 'react';
 
-const Project = () => {
+const Project = ({ project }) => {
+    const title = project.title.rendered;
+    const content = project.content.rendered; 
+    
     return (
-        <div>Project</div>
+        <div className='project'>
+            <h3>{title}</h3>
+            <p>{content}</p>
+        </div>
     );
 };
 
