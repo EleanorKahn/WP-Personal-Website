@@ -285,7 +285,7 @@ Not found styles
 .not-found {
     display: grid;
     place-items: center;
-    height: 72.5vh;
+    /* height: 72.5vh; */
     background-image: url("../assets//images/desk-2325627_1920.jpg");
     background-size: cover;  
 }

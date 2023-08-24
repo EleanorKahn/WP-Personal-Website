@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NotFound from '../components/NotFound';
 import Loading from '../components/Loading';
+import Project from '../components/Project';
 
 const MyWorkPage = () => {
     const [projects, setProjects] = useState([]);
@@ -27,11 +28,12 @@ const MyWorkPage = () => {
     return (
         <div className='my-work-page'>
             {projects.length && !loading &&
-            <div>
-                {projects.map((project) => {
-                    console.log(project.title.rendered);
-                })}
-            </div>}
+                <div>
+                    {projects.map((project) => {
+                        console.log(project.title.rendered);
+                        return <Project />
+                    })}
+                </div>}
             <NotFound />
         </div>
     );
