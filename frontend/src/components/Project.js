@@ -7,11 +7,13 @@ const Project = ({ project }) => {
     // const image = project.featuredmedia;
 
     return (
-        <div className='project'>
-            {/* <img src={image}></img> */}
-            <h3 className='project-title' dangerouslySetInnerHTML={{ __html: title }}></h3>
-            <p className='project-description' dangerouslySetInnerHTML={{ __html: content}}></p>
-            <p><a href='https://github.com/EleanorKahn' target='blank'>View code</a></p>
+        <div className='project-container'>
+            <div className='project'>
+                {/* <img src={image}></img> */}
+                <h3 className='project-title' dangerouslySetInnerHTML={{ __html: title }}></h3>
+                <p className='project-description' dangerouslySetInnerHTML={{ __html: content}}></p>
+                <p><a href='https://github.com/EleanorKahn' target='blank'>View code</a></p>
+            </div>
         </div>
     );
 };

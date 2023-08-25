@@ -279,6 +279,28 @@ AboutPage styles
 }
 
 /*
+Project styles
+*/
+
+.my-work-page {
+    background-image: url("../assets/images/desk-2325627_1280.jpg");
+}
+
+/* .my-work-page:last-child {
+    padding: 2rem;
+} */
+
+.project-container {
+    padding: 1rem;
+}
+
+.project {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 10px 10px 8px rgba(37, 37, 37, 0.1);
+}
+
+/*
 Not found styles
 */
 
